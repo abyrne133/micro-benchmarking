@@ -14,7 +14,31 @@ git add .
 git commit -m "shell script test results batch $BATCH_SIZE"
 git push
 
-BATCH_SIZE=1024
+BATCH_SIZE=1000
+java $DEFAULT_ARGS -bs $BATCH_SIZE -o results/out_$BATCH_SIZE.txt -rff results/machine_out_$BATCH_SIZE.csv
+git add .
+git commit -m "shell script test results batch $BATCH_SIZE"
+git push
+
+BATCH_SIZE=10000
+java $DEFAULT_ARGS -bs $BATCH_SIZE -o results/out_$BATCH_SIZE.txt -rff results/machine_out_$BATCH_SIZE.csv
+git add .
+git commit -m "shell script test results batch $BATCH_SIZE"
+git push
+
+BATCH_SIZE=100000
+java $DEFAULT_ARGS -bs $BATCH_SIZE -o results/out_$BATCH_SIZE.txt -rff results/machine_out_$BATCH_SIZE.csv
+git add .
+git commit -m "shell script test results batch $BATCH_SIZE"
+git push
+
+BATCH_SIZE=1000000
+java $DEFAULT_ARGS -bs $BATCH_SIZE -o results/out_$BATCH_SIZE.txt -rff results/machine_out_$BATCH_SIZE.csv
+git add .
+git commit -m "shell script test results batch $BATCH_SIZE"
+git push
+
+BATCH_SIZE=5000000
 java $DEFAULT_ARGS -bs $BATCH_SIZE -o results/out_$BATCH_SIZE.txt -rff results/machine_out_$BATCH_SIZE.csv
 git add .
 git commit -m "shell script test results batch $BATCH_SIZE"
