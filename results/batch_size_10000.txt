@@ -1,0 +1,5026 @@
+    [1150.000, 1200.000) = 0
+    [1200.000, 1250.000) = 1
+    [1250.000, 1300.000) = 1
+    [1300.000, 1350.000) = 0
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 0
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1044.262 us/op
+     p(50.0000) =   1127.568 us/op
+     p(90.0000) =   1557.304 us/op
+     p(95.0000) =   1558.709 us/op
+     p(99.0000) =   1558.709 us/op
+     p(99.9000) =   1558.709 us/op
+     p(99.9900) =   1558.709 us/op
+     p(99.9990) =   1558.709 us/op
+     p(99.9999) =   1558.709 us/op
+    p(100.0000) =   1558.709 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 16, loadFactor = 0.75)
+
+# Run progress: 68.98% complete, ETA 00:11:45
+# Fork: 1 of 2
+# Warmup Iteration   1: 2483.780 us/op
+# Warmup Iteration   2: 1567.867 us/op
+# Warmup Iteration   3: 1462.559 us/op
+# Warmup Iteration   4: 1511.223 us/op
+# Warmup Iteration   5: 1244.931 us/op
+Iteration   1: 1344.822 us/op
+Iteration   2: 1360.779 us/op
+Iteration   3: 1163.940 us/op
+Iteration   4: 1182.226 us/op
+Iteration   5: 1197.791 us/op
+
+# Run progress: 69.21% complete, ETA 00:11:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 2912.521 us/op
+# Warmup Iteration   2: 1834.201 us/op
+# Warmup Iteration   3: 1284.526 us/op
+# Warmup Iteration   4: 1227.946 us/op
+# Warmup Iteration   5: 1254.346 us/op
+Iteration   1: 1240.557 us/op
+Iteration   2: 1494.968 us/op
+Iteration   3: 1104.118 us/op
+Iteration   4: 1372.147 us/op
+Iteration   5: 1129.922 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1259.127 ±(99.9%) 192.477 us/op
+
+  Histogram, us/op:
+    [1100.000, 1125.000) = 1
+    [1125.000, 1150.000) = 1
+    [1150.000, 1175.000) = 1
+    [1175.000, 1200.000) = 2
+    [1200.000, 1225.000) = 0
+    [1225.000, 1250.000) = 1
+    [1250.000, 1275.000) = 0
+    [1275.000, 1300.000) = 0
+    [1300.000, 1325.000) = 0
+    [1325.000, 1350.000) = 1
+    [1350.000, 1375.000) = 2
+    [1375.000, 1400.000) = 0
+    [1400.000, 1425.000) = 0
+    [1425.000, 1450.000) = 0
+    [1450.000, 1475.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1104.118 us/op
+     p(50.0000) =   1219.174 us/op
+     p(90.0000) =   1482.686 us/op
+     p(95.0000) =   1494.968 us/op
+     p(99.0000) =   1494.968 us/op
+     p(99.9000) =   1494.968 us/op
+     p(99.9900) =   1494.968 us/op
+     p(99.9990) =   1494.968 us/op
+     p(99.9999) =   1494.968 us/op
+    p(100.0000) =   1494.968 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 16, loadFactor = 0.875)
+
+# Run progress: 69.44% complete, ETA 00:11:34
+# Fork: 1 of 2
+# Warmup Iteration   1: 2828.022 us/op
+# Warmup Iteration   2: 1933.215 us/op
+# Warmup Iteration   3: 1304.981 us/op
+# Warmup Iteration   4: 1324.303 us/op
+# Warmup Iteration   5: 1321.247 us/op
+Iteration   1: 1463.511 us/op
+Iteration   2: 1462.200 us/op
+Iteration   3: 1238.037 us/op
+Iteration   4: 1168.294 us/op
+Iteration   5: 1186.951 us/op
+
+# Run progress: 69.68% complete, ETA 00:11:29
+# Fork: 2 of 2
+# Warmup Iteration   1: 2667.187 us/op
+# Warmup Iteration   2: 1907.221 us/op
+# Warmup Iteration   3: 1355.641 us/op
+# Warmup Iteration   4: 1281.142 us/op
+# Warmup Iteration   5: 1287.553 us/op
+Iteration   1: 1569.183 us/op
+Iteration   2: 1423.144 us/op
+Iteration   3: 1209.758 us/op
+Iteration   4: 1172.173 us/op
+Iteration   5: 1150.900 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1304.415 ±(99.9%) 236.994 us/op
+
+  Histogram, us/op:
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 4
+    [1200.000, 1250.000) = 2
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 0
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 1
+    [1450.000, 1500.000) = 2
+    [1500.000, 1550.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1150.900 us/op
+     p(50.0000) =   1223.898 us/op
+     p(90.0000) =   1558.616 us/op
+     p(95.0000) =   1569.183 us/op
+     p(99.0000) =   1569.183 us/op
+     p(99.9000) =   1569.183 us/op
+     p(99.9900) =   1569.183 us/op
+     p(99.9990) =   1569.183 us/op
+     p(99.9999) =   1569.183 us/op
+    p(100.0000) =   1569.183 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 16, loadFactor = 1)
+
+# Run progress: 69.91% complete, ETA 00:11:24
+# Fork: 1 of 2
+# Warmup Iteration   1: 2708.804 us/op
+# Warmup Iteration   2: 2210.604 us/op
+# Warmup Iteration   3: 1366.153 us/op
+# Warmup Iteration   4: 1339.526 us/op
+# Warmup Iteration   5: 1324.810 us/op
+Iteration   1: 1410.477 us/op
+Iteration   2: 1465.100 us/op
+Iteration   3: 1268.614 us/op
+Iteration   4: 1226.294 us/op
+Iteration   5: 1244.975 us/op
+
+# Run progress: 70.14% complete, ETA 00:11:19
+# Fork: 2 of 2
+# Warmup Iteration   1: 2796.443 us/op
+# Warmup Iteration   2: 1828.869 us/op
+# Warmup Iteration   3: 1431.765 us/op
+# Warmup Iteration   4: 1404.282 us/op
+# Warmup Iteration   5: 1348.956 us/op
+Iteration   1: 1525.910 us/op
+Iteration   2: 1501.213 us/op
+Iteration   3: 1200.929 us/op
+Iteration   4: 1349.253 us/op
+Iteration   5: 1215.011 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1340.778 ±(99.9%) 190.749 us/op
+
+  Histogram, us/op:
+    [1200.000, 1225.000) = 2
+    [1225.000, 1250.000) = 2
+    [1250.000, 1275.000) = 1
+    [1275.000, 1300.000) = 0
+    [1300.000, 1325.000) = 0
+    [1325.000, 1350.000) = 1
+    [1350.000, 1375.000) = 0
+    [1375.000, 1400.000) = 0
+    [1400.000, 1425.000) = 1
+    [1425.000, 1450.000) = 0
+    [1450.000, 1475.000) = 1
+    [1475.000, 1500.000) = 0
+    [1500.000, 1525.000) = 1
+    [1525.000, 1550.000) = 1
+    [1550.000, 1575.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1200.929 us/op
+     p(50.0000) =   1308.934 us/op
+     p(90.0000) =   1523.440 us/op
+     p(95.0000) =   1525.910 us/op
+     p(99.0000) =   1525.910 us/op
+     p(99.9000) =   1525.910 us/op
+     p(99.9900) =   1525.910 us/op
+     p(99.9990) =   1525.910 us/op
+     p(99.9999) =   1525.910 us/op
+    p(100.0000) =   1525.910 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100, loadFactor = 0.125)
+
+# Run progress: 70.37% complete, ETA 00:11:13
+# Fork: 1 of 2
+# Warmup Iteration   1: 3613.741 us/op
+# Warmup Iteration   2: 2428.261 us/op
+# Warmup Iteration   3: 2262.537 us/op
+# Warmup Iteration   4: 1970.441 us/op
+# Warmup Iteration   5: 2059.714 us/op
+Iteration   1: 1956.091 us/op
+Iteration   2: 1863.617 us/op
+Iteration   3: 1556.659 us/op
+Iteration   4: 1631.972 us/op
+Iteration   5: 1572.338 us/op
+
+# Run progress: 70.60% complete, ETA 00:11:08
+# Fork: 2 of 2
+# Warmup Iteration   1: 3127.878 us/op
+# Warmup Iteration   2: 2500.966 us/op
+# Warmup Iteration   3: 2460.657 us/op
+# Warmup Iteration   4: 1965.479 us/op
+# Warmup Iteration   5: 1893.326 us/op
+Iteration   1: 1860.347 us/op
+Iteration   2: 2075.286 us/op
+Iteration   3: 1626.205 us/op
+Iteration   4: 1684.094 us/op
+Iteration   5: 1303.928 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1713.054 ±(99.9%) 342.259 us/op
+
+  Histogram, us/op:
+    [1300.000, 1350.000) = 1
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 0
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 2
+    [1600.000, 1650.000) = 2
+    [1650.000, 1700.000) = 1
+    [1700.000, 1750.000) = 0
+    [1750.000, 1800.000) = 0
+    [1800.000, 1850.000) = 0
+    [1850.000, 1900.000) = 2
+    [1900.000, 1950.000) = 0
+    [1950.000, 2000.000) = 1
+    [2000.000, 2050.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1303.928 us/op
+     p(50.0000) =   1658.033 us/op
+     p(90.0000) =   2063.367 us/op
+     p(95.0000) =   2075.286 us/op
+     p(99.0000) =   2075.286 us/op
+     p(99.9000) =   2075.286 us/op
+     p(99.9900) =   2075.286 us/op
+     p(99.9990) =   2075.286 us/op
+     p(99.9999) =   2075.286 us/op
+    p(100.0000) =   2075.286 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100, loadFactor = 0.250)
+
+# Run progress: 70.83% complete, ETA 00:11:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 2943.608 us/op
+# Warmup Iteration   2: 2206.362 us/op
+# Warmup Iteration   3: 1581.884 us/op
+# Warmup Iteration   4: 1529.213 us/op
+# Warmup Iteration   5: 1583.918 us/op
+Iteration   1: 1511.004 us/op
+Iteration   2: 1325.277 us/op
+Iteration   3: 1129.653 us/op
+Iteration   4: 1112.963 us/op
+Iteration   5: 1187.172 us/op
+
+# Run progress: 71.06% complete, ETA 00:10:58
+# Fork: 2 of 2
+# Warmup Iteration   1: 3092.631 us/op
+# Warmup Iteration   2: 2177.012 us/op
+# Warmup Iteration   3: 1596.050 us/op
+# Warmup Iteration   4: 1497.140 us/op
+# Warmup Iteration   5: 1540.349 us/op
+Iteration   1: 1505.568 us/op
+Iteration   2: 1449.520 us/op
+Iteration   3: 1090.770 us/op
+Iteration   4: 1052.354 us/op
+Iteration   5: 1085.056 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1244.934 ±(99.9%) 279.451 us/op
+
+  Histogram, us/op:
+    [1000.000, 1050.000) = 0
+    [1050.000, 1100.000) = 3
+    [1100.000, 1150.000) = 2
+    [1150.000, 1200.000) = 1
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 1
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 1
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 2
+
+  Percentiles, us/op:
+      p(0.0000) =   1052.354 us/op
+     p(50.0000) =   1158.413 us/op
+     p(90.0000) =   1510.460 us/op
+     p(95.0000) =   1511.004 us/op
+     p(99.0000) =   1511.004 us/op
+     p(99.9000) =   1511.004 us/op
+     p(99.9900) =   1511.004 us/op
+     p(99.9990) =   1511.004 us/op
+     p(99.9999) =   1511.004 us/op
+    p(100.0000) =   1511.004 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100, loadFactor = 0.375)
+
+# Run progress: 71.30% complete, ETA 00:10:52
+# Fork: 1 of 2
+# Warmup Iteration   1: 2847.704 us/op
+# Warmup Iteration   2: 1681.054 us/op
+# Warmup Iteration   3: 1655.229 us/op
+# Warmup Iteration   4: 1354.847 us/op
+# Warmup Iteration   5: 1344.655 us/op
+Iteration   1: 1412.446 us/op
+Iteration   2: 1412.634 us/op
+Iteration   3: 1172.871 us/op
+Iteration   4: 1161.065 us/op
+Iteration   5: 1177.421 us/op
+
+# Run progress: 71.53% complete, ETA 00:10:47
+# Fork: 2 of 2
+# Warmup Iteration   1: 3474.568 us/op
+# Warmup Iteration   2: 1685.359 us/op
+# Warmup Iteration   3: 1850.935 us/op
+# Warmup Iteration   4: 1317.577 us/op
+# Warmup Iteration   5: 1354.216 us/op
+Iteration   1: 1450.601 us/op
+Iteration   2: 1539.815 us/op
+Iteration   3: 1144.052 us/op
+Iteration   4: 1181.386 us/op
+Iteration   5: 1199.719 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1285.201 ±(99.9%) 226.649 us/op
+
+  Histogram, us/op:
+    [1100.000, 1150.000) = 1
+    [1150.000, 1200.000) = 5
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 0
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 2
+    [1450.000, 1500.000) = 1
+    [1500.000, 1550.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1144.052 us/op
+     p(50.0000) =   1190.553 us/op
+     p(90.0000) =   1530.894 us/op
+     p(95.0000) =   1539.815 us/op
+     p(99.0000) =   1539.815 us/op
+     p(99.9000) =   1539.815 us/op
+     p(99.9900) =   1539.815 us/op
+     p(99.9990) =   1539.815 us/op
+     p(99.9999) =   1539.815 us/op
+    p(100.0000) =   1539.815 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100, loadFactor = 0.5)
+
+# Run progress: 71.76% complete, ETA 00:10:42
+# Fork: 1 of 2
+# Warmup Iteration   1: 2838.206 us/op
+# Warmup Iteration   2: 1991.361 us/op
+# Warmup Iteration   3: 1470.155 us/op
+# Warmup Iteration   4: 1390.662 us/op
+# Warmup Iteration   5: 1397.321 us/op
+Iteration   1: 1491.860 us/op
+Iteration   2: 1577.211 us/op
+Iteration   3: 1239.934 us/op
+Iteration   4: 1259.391 us/op
+Iteration   5: 1306.801 us/op
+
+# Run progress: 71.99% complete, ETA 00:10:36
+# Fork: 2 of 2
+# Warmup Iteration   1: 3692.218 us/op
+# Warmup Iteration   2: 1913.921 us/op
+# Warmup Iteration   3: 1943.181 us/op
+# Warmup Iteration   4: 1462.236 us/op
+# Warmup Iteration   5: 1496.187 us/op
+Iteration   1: 1580.190 us/op
+Iteration   2: 1580.159 us/op
+Iteration   3: 1422.472 us/op
+Iteration   4: 1306.382 us/op
+Iteration   5: 1350.127 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1411.453 ±(99.9%) 207.351 us/op
+
+  Histogram, us/op:
+    [1200.000, 1225.000) = 0
+    [1225.000, 1250.000) = 1
+    [1250.000, 1275.000) = 1
+    [1275.000, 1300.000) = 0
+    [1300.000, 1325.000) = 2
+    [1325.000, 1350.000) = 0
+    [1350.000, 1375.000) = 1
+    [1375.000, 1400.000) = 0
+    [1400.000, 1425.000) = 1
+    [1425.000, 1450.000) = 0
+    [1450.000, 1475.000) = 0
+    [1475.000, 1500.000) = 1
+    [1500.000, 1525.000) = 0
+    [1525.000, 1550.000) = 0
+    [1550.000, 1575.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1239.934 us/op
+     p(50.0000) =   1386.300 us/op
+     p(90.0000) =   1580.187 us/op
+     p(95.0000) =   1580.190 us/op
+     p(99.0000) =   1580.190 us/op
+     p(99.9000) =   1580.190 us/op
+     p(99.9900) =   1580.190 us/op
+     p(99.9990) =   1580.190 us/op
+     p(99.9999) =   1580.190 us/op
+    p(100.0000) =   1580.190 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100, loadFactor = 0.625)
+
+# Run progress: 72.22% complete, ETA 00:10:31
+# Fork: 1 of 2
+# Warmup Iteration   1: 2961.125 us/op
+# Warmup Iteration   2: 1608.743 us/op
+# Warmup Iteration   3: 1671.960 us/op
+# Warmup Iteration   4: 1359.613 us/op
+# Warmup Iteration   5: 1153.417 us/op
+Iteration   1: 1298.607 us/op
+Iteration   2: 1423.322 us/op
+Iteration   3: 1176.302 us/op
+Iteration   4: 996.042 us/op
+Iteration   5: 1305.339 us/op
+
+# Run progress: 72.45% complete, ETA 00:10:26
+# Fork: 2 of 2
+# Warmup Iteration   1: 3527.346 us/op
+# Warmup Iteration   2: 1565.243 us/op
+# Warmup Iteration   3: 1573.567 us/op
+# Warmup Iteration   4: 1223.500 us/op
+# Warmup Iteration   5: 1224.873 us/op
+Iteration   1: 1276.202 us/op
+Iteration   2: 1593.983 us/op
+Iteration   3: 1325.646 us/op
+Iteration   4: 1023.395 us/op
+Iteration   5: 1256.183 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1267.502 ±(99.9%) 265.927 us/op
+
+  Histogram, us/op:
+    [ 900.000,  950.000) = 0
+    [ 950.000, 1000.000) = 1
+    [1000.000, 1050.000) = 1
+    [1050.000, 1100.000) = 0
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 1
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 3
+    [1300.000, 1350.000) = 2
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 1
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    996.042 us/op
+     p(50.0000) =   1287.405 us/op
+     p(90.0000) =   1576.917 us/op
+     p(95.0000) =   1593.983 us/op
+     p(99.0000) =   1593.983 us/op
+     p(99.9000) =   1593.983 us/op
+     p(99.9900) =   1593.983 us/op
+     p(99.9990) =   1593.983 us/op
+     p(99.9999) =   1593.983 us/op
+    p(100.0000) =   1593.983 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100, loadFactor = 0.75)
+
+# Run progress: 72.69% complete, ETA 00:10:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 2752.782 us/op
+# Warmup Iteration   2: 1695.050 us/op
+# Warmup Iteration   3: 1512.087 us/op
+# Warmup Iteration   4: 1529.450 us/op
+# Warmup Iteration   5: 1361.994 us/op
+Iteration   1: 1256.593 us/op
+Iteration   2: 1440.394 us/op
+Iteration   3: 1167.669 us/op
+Iteration   4: 1099.748 us/op
+Iteration   5: 1073.514 us/op
+
+# Run progress: 72.92% complete, ETA 00:10:15
+# Fork: 2 of 2
+# Warmup Iteration   1: 2808.749 us/op
+# Warmup Iteration   2: 1636.205 us/op
+# Warmup Iteration   3: 1581.644 us/op
+# Warmup Iteration   4: 1731.036 us/op
+# Warmup Iteration   5: 1229.598 us/op
+Iteration   1: 1255.378 us/op
+Iteration   2: 1771.588 us/op
+Iteration   3: 1146.103 us/op
+Iteration   4: 1089.830 us/op
+Iteration   5: 1126.015 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1242.683 ±(99.9%) 326.662 us/op
+
+  Histogram, us/op:
+    [1000.000, 1050.000) = 0
+    [1050.000, 1100.000) = 3
+    [1100.000, 1150.000) = 2
+    [1150.000, 1200.000) = 1
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 2
+    [1300.000, 1350.000) = 0
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 1
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 0
+    [1600.000, 1650.000) = 0
+    [1650.000, 1700.000) = 0
+    [1700.000, 1750.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1073.514 us/op
+     p(50.0000) =   1156.886 us/op
+     p(90.0000) =   1738.469 us/op
+     p(95.0000) =   1771.588 us/op
+     p(99.0000) =   1771.588 us/op
+     p(99.9000) =   1771.588 us/op
+     p(99.9900) =   1771.588 us/op
+     p(99.9990) =   1771.588 us/op
+     p(99.9999) =   1771.588 us/op
+    p(100.0000) =   1771.588 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100, loadFactor = 0.875)
+
+# Run progress: 73.15% complete, ETA 00:10:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 2704.678 us/op
+# Warmup Iteration   2: 2145.498 us/op
+# Warmup Iteration   3: 1347.146 us/op
+# Warmup Iteration   4: 1316.570 us/op
+# Warmup Iteration   5: 1299.406 us/op
+Iteration   1: 1315.009 us/op
+Iteration   2: 1336.065 us/op
+Iteration   3: 1148.685 us/op
+Iteration   4: 1286.995 us/op
+Iteration   5: 1132.169 us/op
+
+# Run progress: 73.38% complete, ETA 00:10:05
+# Fork: 2 of 2
+# Warmup Iteration   1: 2977.385 us/op
+# Warmup Iteration   2: 1994.506 us/op
+# Warmup Iteration   3: 1309.738 us/op
+# Warmup Iteration   4: 1320.000 us/op
+# Warmup Iteration   5: 1297.208 us/op
+Iteration   1: 1388.295 us/op
+Iteration   2: 1483.184 us/op
+Iteration   3: 1110.445 us/op
+Iteration   4: 1212.025 us/op
+Iteration   5: 1291.763 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1270.463 ±(99.9%) 181.090 us/op
+
+  Histogram, us/op:
+    [1100.000, 1125.000) = 1
+    [1125.000, 1150.000) = 2
+    [1150.000, 1175.000) = 0
+    [1175.000, 1200.000) = 0
+    [1200.000, 1225.000) = 1
+    [1225.000, 1250.000) = 0
+    [1250.000, 1275.000) = 0
+    [1275.000, 1300.000) = 2
+    [1300.000, 1325.000) = 1
+    [1325.000, 1350.000) = 1
+    [1350.000, 1375.000) = 0
+    [1375.000, 1400.000) = 1
+    [1400.000, 1425.000) = 0
+    [1425.000, 1450.000) = 0
+    [1450.000, 1475.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1110.445 us/op
+     p(50.0000) =   1289.379 us/op
+     p(90.0000) =   1473.695 us/op
+     p(95.0000) =   1483.184 us/op
+     p(99.0000) =   1483.184 us/op
+     p(99.9000) =   1483.184 us/op
+     p(99.9900) =   1483.184 us/op
+     p(99.9990) =   1483.184 us/op
+     p(99.9999) =   1483.184 us/op
+    p(100.0000) =   1483.184 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100, loadFactor = 1)
+
+# Run progress: 73.61% complete, ETA 00:10:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 2852.008 us/op
+# Warmup Iteration   2: 1827.248 us/op
+# Warmup Iteration   3: 1893.212 us/op
+# Warmup Iteration   4: 1433.691 us/op
+# Warmup Iteration   5: 1318.510 us/op
+Iteration   1: 1585.522 us/op
+Iteration   2: 1515.076 us/op
+Iteration   3: 1240.895 us/op
+Iteration   4: 1415.643 us/op
+Iteration   5: 1230.609 us/op
+
+# Run progress: 73.84% complete, ETA 00:09:54
+# Fork: 2 of 2
+# Warmup Iteration   1: 3000.002 us/op
+# Warmup Iteration   2: 1748.615 us/op
+# Warmup Iteration   3: 1609.337 us/op
+# Warmup Iteration   4: 1627.142 us/op
+# Warmup Iteration   5: 1365.037 us/op
+Iteration   1: 1501.749 us/op
+Iteration   2: 1531.342 us/op
+Iteration   3: 1281.164 us/op
+Iteration   4: 1262.136 us/op
+Iteration   5: 1247.617 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1381.175 ±(99.9%) 215.184 us/op
+
+  Histogram, us/op:
+    [1200.000, 1225.000) = 0
+    [1225.000, 1250.000) = 3
+    [1250.000, 1275.000) = 1
+    [1275.000, 1300.000) = 1
+    [1300.000, 1325.000) = 0
+    [1325.000, 1350.000) = 0
+    [1350.000, 1375.000) = 0
+    [1375.000, 1400.000) = 0
+    [1400.000, 1425.000) = 1
+    [1425.000, 1450.000) = 0
+    [1450.000, 1475.000) = 0
+    [1475.000, 1500.000) = 0
+    [1500.000, 1525.000) = 2
+    [1525.000, 1550.000) = 1
+    [1550.000, 1575.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1230.609 us/op
+     p(50.0000) =   1348.404 us/op
+     p(90.0000) =   1580.104 us/op
+     p(95.0000) =   1585.522 us/op
+     p(99.0000) =   1585.522 us/op
+     p(99.9000) =   1585.522 us/op
+     p(99.9900) =   1585.522 us/op
+     p(99.9990) =   1585.522 us/op
+     p(99.9999) =   1585.522 us/op
+    p(100.0000) =   1585.522 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1024, loadFactor = 0.125)
+
+# Run progress: 74.07% complete, ETA 00:09:49
+# Fork: 1 of 2
+# Warmup Iteration   1: 3121.104 us/op
+# Warmup Iteration   2: 2350.027 us/op
+# Warmup Iteration   3: 2021.667 us/op
+# Warmup Iteration   4: 1802.021 us/op
+# Warmup Iteration   5: 1796.490 us/op
+Iteration   1: 1591.871 us/op
+Iteration   2: 1473.743 us/op
+Iteration   3: 1309.752 us/op
+Iteration   4: 1298.563 us/op
+Iteration   5: 1293.692 us/op
+
+# Run progress: 74.31% complete, ETA 00:09:44
+# Fork: 2 of 2
+# Warmup Iteration   1: 3372.551 us/op
+# Warmup Iteration   2: 2412.477 us/op
+# Warmup Iteration   3: 1983.717 us/op
+# Warmup Iteration   4: 1742.175 us/op
+# Warmup Iteration   5: 1713.282 us/op
+Iteration   1: 1631.816 us/op
+Iteration   2: 1515.546 us/op
+Iteration   3: 1313.144 us/op
+Iteration   4: 1331.979 us/op
+Iteration   5: 1311.511 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1407.162 ±(99.9%) 200.675 us/op
+
+  Histogram, us/op:
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 2
+    [1300.000, 1350.000) = 4
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 0
+    [1450.000, 1500.000) = 1
+    [1500.000, 1550.000) = 1
+    [1550.000, 1600.000) = 1
+    [1600.000, 1650.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1293.692 us/op
+     p(50.0000) =   1322.562 us/op
+     p(90.0000) =   1627.822 us/op
+     p(95.0000) =   1631.816 us/op
+     p(99.0000) =   1631.816 us/op
+     p(99.9000) =   1631.816 us/op
+     p(99.9900) =   1631.816 us/op
+     p(99.9990) =   1631.816 us/op
+     p(99.9999) =   1631.816 us/op
+    p(100.0000) =   1631.816 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1024, loadFactor = 0.250)
+
+# Run progress: 74.54% complete, ETA 00:09:39
+# Fork: 1 of 2
+# Warmup Iteration   1: 3206.443 us/op
+# Warmup Iteration   2: 1966.058 us/op
+# Warmup Iteration   3: 1851.288 us/op
+# Warmup Iteration   4: 1439.335 us/op
+# Warmup Iteration   5: 1503.749 us/op
+Iteration   1: 1437.550 us/op
+Iteration   2: 1420.811 us/op
+Iteration   3: 1065.899 us/op
+Iteration   4: 1055.779 us/op
+Iteration   5: 1081.661 us/op
+
+# Run progress: 74.77% complete, ETA 00:09:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 3008.616 us/op
+# Warmup Iteration   2: 2466.604 us/op
+# Warmup Iteration   3: 1555.133 us/op
+# Warmup Iteration   4: 1497.679 us/op
+# Warmup Iteration   5: 1571.297 us/op
+Iteration   1: 1500.219 us/op
+Iteration   2: 1285.845 us/op
+Iteration   3: 1101.549 us/op
+Iteration   4: 1082.503 us/op
+Iteration   5: 1118.837 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1215.065 ±(99.9%) 268.229 us/op
+
+  Histogram, us/op:
+    [1000.000, 1050.000) = 0
+    [1050.000, 1100.000) = 4
+    [1100.000, 1150.000) = 2
+    [1150.000, 1200.000) = 0
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 1
+    [1300.000, 1350.000) = 0
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 2
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1055.779 us/op
+     p(50.0000) =   1110.193 us/op
+     p(90.0000) =   1493.952 us/op
+     p(95.0000) =   1500.219 us/op
+     p(99.0000) =   1500.219 us/op
+     p(99.9000) =   1500.219 us/op
+     p(99.9900) =   1500.219 us/op
+     p(99.9990) =   1500.219 us/op
+     p(99.9999) =   1500.219 us/op
+    p(100.0000) =   1500.219 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1024, loadFactor = 0.375)
+
+# Run progress: 75.00% complete, ETA 00:09:28
+# Fork: 1 of 2
+# Warmup Iteration   1: 2601.905 us/op
+# Warmup Iteration   2: 1670.681 us/op
+# Warmup Iteration   3: 1622.071 us/op
+# Warmup Iteration   4: 1261.771 us/op
+# Warmup Iteration   5: 1256.791 us/op
+Iteration   1: 1428.009 us/op
+Iteration   2: 1621.747 us/op
+Iteration   3: 1125.087 us/op
+Iteration   4: 1264.024 us/op
+Iteration   5: 1143.626 us/op
+
+# Run progress: 75.23% complete, ETA 00:09:23
+# Fork: 2 of 2
+# Warmup Iteration   1: 3119.541 us/op
+# Warmup Iteration   2: 1623.403 us/op
+# Warmup Iteration   3: 1692.934 us/op
+# Warmup Iteration   4: 1387.978 us/op
+# Warmup Iteration   5: 1332.454 us/op
+Iteration   1: 1414.518 us/op
+Iteration   2: 1364.576 us/op
+Iteration   3: 1223.082 us/op
+Iteration   4: 1189.165 us/op
+Iteration   5: 1212.169 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1298.600 ±(99.9%) 236.068 us/op
+
+  Histogram, us/op:
+    [1100.000, 1150.000) = 2
+    [1150.000, 1200.000) = 1
+    [1200.000, 1250.000) = 2
+    [1250.000, 1300.000) = 1
+    [1300.000, 1350.000) = 0
+    [1350.000, 1400.000) = 1
+    [1400.000, 1450.000) = 2
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 0
+    [1600.000, 1650.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1125.087 us/op
+     p(50.0000) =   1243.553 us/op
+     p(90.0000) =   1602.373 us/op
+     p(95.0000) =   1621.747 us/op
+     p(99.0000) =   1621.747 us/op
+     p(99.9000) =   1621.747 us/op
+     p(99.9900) =   1621.747 us/op
+     p(99.9990) =   1621.747 us/op
+     p(99.9999) =   1621.747 us/op
+    p(100.0000) =   1621.747 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1024, loadFactor = 0.5)
+
+# Run progress: 75.46% complete, ETA 00:09:17
+# Fork: 1 of 2
+# Warmup Iteration   1: 3052.479 us/op
+# Warmup Iteration   2: 1767.276 us/op
+# Warmup Iteration   3: 1875.207 us/op
+# Warmup Iteration   4: 1457.835 us/op
+# Warmup Iteration   5: 1523.638 us/op
+Iteration   1: 1488.241 us/op
+Iteration   2: 1556.016 us/op
+Iteration   3: 1281.517 us/op
+Iteration   4: 1219.694 us/op
+Iteration   5: 1060.372 us/op
+
+# Run progress: 75.69% complete, ETA 00:09:12
+# Fork: 2 of 2
+# Warmup Iteration   1: 2744.789 us/op
+# Warmup Iteration   2: 1885.910 us/op
+# Warmup Iteration   3: 1843.853 us/op
+# Warmup Iteration   4: 1378.756 us/op
+# Warmup Iteration   5: 1374.908 us/op
+Iteration   1: 1530.403 us/op
+Iteration   2: 1473.814 us/op
+Iteration   3: 1230.843 us/op
+Iteration   4: 1246.903 us/op
+Iteration   5: 1342.956 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1343.076 ±(99.9%) 246.566 us/op
+
+  Histogram, us/op:
+    [1000.000, 1050.000) = 0
+    [1050.000, 1100.000) = 1
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 0
+    [1200.000, 1250.000) = 3
+    [1250.000, 1300.000) = 1
+    [1300.000, 1350.000) = 1
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 0
+    [1450.000, 1500.000) = 2
+    [1500.000, 1550.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1060.372 us/op
+     p(50.0000) =   1312.237 us/op
+     p(90.0000) =   1553.455 us/op
+     p(95.0000) =   1556.016 us/op
+     p(99.0000) =   1556.016 us/op
+     p(99.9000) =   1556.016 us/op
+     p(99.9900) =   1556.016 us/op
+     p(99.9990) =   1556.016 us/op
+     p(99.9999) =   1556.016 us/op
+    p(100.0000) =   1556.016 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1024, loadFactor = 0.625)
+
+# Run progress: 75.93% complete, ETA 00:09:07
+# Fork: 1 of 2
+# Warmup Iteration   1: 2840.402 us/op
+# Warmup Iteration   2: 1533.053 us/op
+# Warmup Iteration   3: 1710.775 us/op
+# Warmup Iteration   4: 1235.290 us/op
+# Warmup Iteration   5: 1209.006 us/op
+Iteration   1: 1286.261 us/op
+Iteration   2: 1272.691 us/op
+Iteration   3: 1118.841 us/op
+Iteration   4: 1133.301 us/op
+Iteration   5: 1135.120 us/op
+
+# Run progress: 76.16% complete, ETA 00:09:02
+# Fork: 2 of 2
+# Warmup Iteration   1: 2673.167 us/op
+# Warmup Iteration   2: 1524.957 us/op
+# Warmup Iteration   3: 1618.638 us/op
+# Warmup Iteration   4: 1366.934 us/op
+# Warmup Iteration   5: 1219.218 us/op
+Iteration   1: 1222.403 us/op
+Iteration   2: 1268.142 us/op
+Iteration   3: 1113.650 us/op
+Iteration   4: 1124.271 us/op
+Iteration   5: 1117.701 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1179.238 ±(99.9%) 111.291 us/op
+
+  Histogram, us/op:
+    [1100.000, 1112.500) = 0
+    [1112.500, 1125.000) = 4
+    [1125.000, 1137.500) = 2
+    [1137.500, 1150.000) = 0
+    [1150.000, 1162.500) = 0
+    [1162.500, 1175.000) = 0
+    [1175.000, 1187.500) = 0
+    [1187.500, 1200.000) = 0
+    [1200.000, 1212.500) = 0
+    [1212.500, 1225.000) = 1
+    [1225.000, 1237.500) = 0
+    [1237.500, 1250.000) = 0
+    [1250.000, 1262.500) = 0
+    [1262.500, 1275.000) = 2
+    [1275.000, 1287.500) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1113.650 us/op
+     p(50.0000) =   1134.211 us/op
+     p(90.0000) =   1284.904 us/op
+     p(95.0000) =   1286.261 us/op
+     p(99.0000) =   1286.261 us/op
+     p(99.9000) =   1286.261 us/op
+     p(99.9900) =   1286.261 us/op
+     p(99.9990) =   1286.261 us/op
+     p(99.9999) =   1286.261 us/op
+    p(100.0000) =   1286.261 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1024, loadFactor = 0.75)
+
+# Run progress: 76.39% complete, ETA 00:08:56
+# Fork: 1 of 2
+# Warmup Iteration   1: 2969.994 us/op
+# Warmup Iteration   2: 1647.160 us/op
+# Warmup Iteration   3: 1544.113 us/op
+# Warmup Iteration   4: 1645.849 us/op
+# Warmup Iteration   5: 1332.344 us/op
+Iteration   1: 1269.800 us/op
+Iteration   2: 1329.320 us/op
+Iteration   3: 1156.190 us/op
+Iteration   4: 1513.159 us/op
+Iteration   5: 1221.406 us/op
+
+# Run progress: 76.62% complete, ETA 00:08:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 2820.505 us/op
+# Warmup Iteration   2: 1618.422 us/op
+# Warmup Iteration   3: 1800.175 us/op
+# Warmup Iteration   4: 1503.466 us/op
+# Warmup Iteration   5: 1262.743 us/op
+Iteration   1: 1296.754 us/op
+Iteration   2: 1416.492 us/op
+Iteration   3: 1180.162 us/op
+Iteration   4: 1258.246 us/op
+Iteration   5: 1222.037 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1286.357 ±(99.9%) 165.592 us/op
+
+  Histogram, us/op:
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 2
+    [1200.000, 1250.000) = 2
+    [1250.000, 1300.000) = 3
+    [1300.000, 1350.000) = 1
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 1
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1156.190 us/op
+     p(50.0000) =   1264.023 us/op
+     p(90.0000) =   1503.492 us/op
+     p(95.0000) =   1513.159 us/op
+     p(99.0000) =   1513.159 us/op
+     p(99.9000) =   1513.159 us/op
+     p(99.9900) =   1513.159 us/op
+     p(99.9990) =   1513.159 us/op
+     p(99.9999) =   1513.159 us/op
+    p(100.0000) =   1513.159 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1024, loadFactor = 0.875)
+
+# Run progress: 76.85% complete, ETA 00:08:46
+# Fork: 1 of 2
+# Warmup Iteration   1: 2654.252 us/op
+# Warmup Iteration   2: 1900.021 us/op
+# Warmup Iteration   3: 1542.302 us/op
+# Warmup Iteration   4: 1555.532 us/op
+# Warmup Iteration   5: 1380.741 us/op
+Iteration   1: 1742.356 us/op
+Iteration   2: 1501.931 us/op
+Iteration   3: 1371.907 us/op
+Iteration   4: 1331.878 us/op
+Iteration   5: 1171.708 us/op
+
+# Run progress: 77.08% complete, ETA 00:08:41
+# Fork: 2 of 2
+# Warmup Iteration   1: 2844.525 us/op
+# Warmup Iteration   2: 1731.147 us/op
+# Warmup Iteration   3: 1794.526 us/op
+# Warmup Iteration   4: 1325.052 us/op
+# Warmup Iteration   5: 1321.702 us/op
+Iteration   1: 1306.257 us/op
+Iteration   2: 1754.279 us/op
+Iteration   3: 1120.445 us/op
+Iteration   4: 1325.893 us/op
+Iteration   5: 1135.163 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1376.182 ±(99.9%) 344.592 us/op
+
+  Histogram, us/op:
+    [1100.000, 1150.000) = 2
+    [1150.000, 1200.000) = 1
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 3
+    [1350.000, 1400.000) = 1
+    [1400.000, 1450.000) = 0
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 1
+    [1550.000, 1600.000) = 0
+    [1600.000, 1650.000) = 0
+    [1650.000, 1700.000) = 0
+    [1700.000, 1750.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1120.445 us/op
+     p(50.0000) =   1328.885 us/op
+     p(90.0000) =   1753.087 us/op
+     p(95.0000) =   1754.279 us/op
+     p(99.0000) =   1754.279 us/op
+     p(99.9000) =   1754.279 us/op
+     p(99.9900) =   1754.279 us/op
+     p(99.9990) =   1754.279 us/op
+     p(99.9999) =   1754.279 us/op
+    p(100.0000) =   1754.279 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1024, loadFactor = 1)
+
+# Run progress: 77.31% complete, ETA 00:08:35
+# Fork: 1 of 2
+# Warmup Iteration   1: 3096.313 us/op
+# Warmup Iteration   2: 2114.852 us/op
+# Warmup Iteration   3: 1790.796 us/op
+# Warmup Iteration   4: 1387.181 us/op
+# Warmup Iteration   5: 1341.121 us/op
+Iteration   1: 1364.172 us/op
+Iteration   2: 1431.174 us/op
+Iteration   3: 1371.759 us/op
+Iteration   4: 1223.472 us/op
+Iteration   5: 1349.493 us/op
+
+# Run progress: 77.55% complete, ETA 00:08:30
+# Fork: 2 of 2
+# Warmup Iteration   1: 2728.041 us/op
+# Warmup Iteration   2: 1770.932 us/op
+# Warmup Iteration   3: 1808.086 us/op
+# Warmup Iteration   4: 1446.495 us/op
+# Warmup Iteration   5: 1381.642 us/op
+Iteration   1: 1425.661 us/op
+Iteration   2: 1651.400 us/op
+Iteration   3: 1274.319 us/op
+Iteration   4: 1240.701 us/op
+Iteration   5: 1226.922 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1355.907 ±(99.9%) 196.679 us/op
+
+  Histogram, us/op:
+    [1200.000, 1250.000) = 3
+    [1250.000, 1300.000) = 1
+    [1300.000, 1350.000) = 1
+    [1350.000, 1400.000) = 2
+    [1400.000, 1450.000) = 2
+    [1450.000, 1500.000) = 0
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 0
+    [1600.000, 1650.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1223.472 us/op
+     p(50.0000) =   1356.833 us/op
+     p(90.0000) =   1629.377 us/op
+     p(95.0000) =   1651.400 us/op
+     p(99.0000) =   1651.400 us/op
+     p(99.9000) =   1651.400 us/op
+     p(99.9900) =   1651.400 us/op
+     p(99.9990) =   1651.400 us/op
+     p(99.9999) =   1651.400 us/op
+    p(100.0000) =   1651.400 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 10000, loadFactor = 0.125)
+
+# Run progress: 77.78% complete, ETA 00:08:25
+# Fork: 1 of 2
+# Warmup Iteration   1: 4680.060 us/op
+# Warmup Iteration   2: 3361.930 us/op
+# Warmup Iteration   3: 2365.848 us/op
+# Warmup Iteration   4: 2170.638 us/op
+# Warmup Iteration   5: 2015.779 us/op
+Iteration   1: 1897.343 us/op
+Iteration   2: 1796.381 us/op
+Iteration   3: 1559.212 us/op
+Iteration   4: 1664.245 us/op
+Iteration   5: 1608.229 us/op
+
+# Run progress: 78.01% complete, ETA 00:08:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 3820.607 us/op
+# Warmup Iteration   2: 2232.889 us/op
+# Warmup Iteration   3: 1970.506 us/op
+# Warmup Iteration   4: 1764.532 us/op
+# Warmup Iteration   5: 1792.006 us/op
+Iteration   1: 1629.186 us/op
+Iteration   2: 1480.019 us/op
+Iteration   3: 1258.900 us/op
+Iteration   4: 1306.711 us/op
+Iteration   5: 1278.721 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1547.895 ±(99.9%) 329.125 us/op
+
+  Histogram, us/op:
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 2
+    [1300.000, 1350.000) = 1
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 0
+    [1450.000, 1500.000) = 1
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 1
+    [1600.000, 1650.000) = 2
+    [1650.000, 1700.000) = 1
+    [1700.000, 1750.000) = 0
+    [1750.000, 1800.000) = 1
+    [1800.000, 1850.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1258.900 us/op
+     p(50.0000) =   1583.721 us/op
+     p(90.0000) =   1887.247 us/op
+     p(95.0000) =   1897.343 us/op
+     p(99.0000) =   1897.343 us/op
+     p(99.9000) =   1897.343 us/op
+     p(99.9900) =   1897.343 us/op
+     p(99.9990) =   1897.343 us/op
+     p(99.9999) =   1897.343 us/op
+    p(100.0000) =   1897.343 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 10000, loadFactor = 0.250)
+
+# Run progress: 78.24% complete, ETA 00:08:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 3456.188 us/op
+# Warmup Iteration   2: 2243.088 us/op
+# Warmup Iteration   3: 1533.374 us/op
+# Warmup Iteration   4: 1482.813 us/op
+# Warmup Iteration   5: 1445.526 us/op
+Iteration   1: 1434.943 us/op
+Iteration   2: 1464.788 us/op
+Iteration   3: 1298.815 us/op
+Iteration   4: 1258.147 us/op
+Iteration   5: 1261.605 us/op
+
+# Run progress: 78.47% complete, ETA 00:08:09
+# Fork: 2 of 2
+# Warmup Iteration   1: 3977.556 us/op
+# Warmup Iteration   2: 1841.082 us/op
+# Warmup Iteration   3: 1656.921 us/op
+# Warmup Iteration   4: 1491.103 us/op
+# Warmup Iteration   5: 1406.158 us/op
+Iteration   1: 1401.195 us/op
+Iteration   2: 1377.731 us/op
+Iteration   3: 1185.117 us/op
+Iteration   4: 1247.134 us/op
+Iteration   5: 1172.423 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1310.190 ±(99.9%) 156.229 us/op
+
+  Histogram, us/op:
+    [1100.000, 1125.000) = 0
+    [1125.000, 1150.000) = 0
+    [1150.000, 1175.000) = 1
+    [1175.000, 1200.000) = 1
+    [1200.000, 1225.000) = 0
+    [1225.000, 1250.000) = 1
+    [1250.000, 1275.000) = 2
+    [1275.000, 1300.000) = 1
+    [1300.000, 1325.000) = 0
+    [1325.000, 1350.000) = 0
+    [1350.000, 1375.000) = 0
+    [1375.000, 1400.000) = 1
+    [1400.000, 1425.000) = 1
+    [1425.000, 1450.000) = 1
+    [1450.000, 1475.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1172.423 us/op
+     p(50.0000) =   1280.210 us/op
+     p(90.0000) =   1461.804 us/op
+     p(95.0000) =   1464.788 us/op
+     p(99.0000) =   1464.788 us/op
+     p(99.9000) =   1464.788 us/op
+     p(99.9900) =   1464.788 us/op
+     p(99.9990) =   1464.788 us/op
+     p(99.9999) =   1464.788 us/op
+    p(100.0000) =   1464.788 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 10000, loadFactor = 0.375)
+
+# Run progress: 78.70% complete, ETA 00:08:04
+# Fork: 1 of 2
+# Warmup Iteration   1: 2489.539 us/op
+# Warmup Iteration   2: 1807.319 us/op
+# Warmup Iteration   3: 1543.456 us/op
+# Warmup Iteration   4: 1127.037 us/op
+# Warmup Iteration   5: 1118.269 us/op
+Iteration   1: 1382.407 us/op
+Iteration   2: 1246.166 us/op
+Iteration   3: 951.154 us/op
+Iteration   4: 960.817 us/op
+Iteration   5: 959.748 us/op
+
+# Run progress: 78.94% complete, ETA 00:07:59
+# Fork: 2 of 2
+# Warmup Iteration   1: 2495.155 us/op
+# Warmup Iteration   2: 1497.933 us/op
+# Warmup Iteration   3: 1745.847 us/op
+# Warmup Iteration   4: 1249.732 us/op
+# Warmup Iteration   5: 1145.706 us/op
+Iteration   1: 1368.447 us/op
+Iteration   2: 1188.686 us/op
+Iteration   3: 961.139 us/op
+Iteration   4: 944.468 us/op
+Iteration   5: 1017.525 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1098.056 ±(99.9%) 272.545 us/op
+
+  Histogram, us/op:
+    [ 900.000,  950.000) = 1
+    [ 950.000, 1000.000) = 4
+    [1000.000, 1050.000) = 1
+    [1050.000, 1100.000) = 0
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 1
+    [1200.000, 1250.000) = 1
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    944.468 us/op
+     p(50.0000) =    989.332 us/op
+     p(90.0000) =   1381.011 us/op
+     p(95.0000) =   1382.407 us/op
+     p(99.0000) =   1382.407 us/op
+     p(99.9000) =   1382.407 us/op
+     p(99.9900) =   1382.407 us/op
+     p(99.9990) =   1382.407 us/op
+     p(99.9999) =   1382.407 us/op
+    p(100.0000) =   1382.407 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 10000, loadFactor = 0.5)
+
+# Run progress: 79.17% complete, ETA 00:07:53
+# Fork: 1 of 2
+# Warmup Iteration   1: 2638.371 us/op
+# Warmup Iteration   2: 1559.429 us/op
+# Warmup Iteration   3: 1463.400 us/op
+# Warmup Iteration   4: 1175.767 us/op
+# Warmup Iteration   5: 1164.967 us/op
+Iteration   1: 1192.748 us/op
+Iteration   2: 1252.866 us/op
+Iteration   3: 1013.152 us/op
+Iteration   4: 995.367 us/op
+Iteration   5: 1207.316 us/op
+
+# Run progress: 79.40% complete, ETA 00:07:48
+# Fork: 2 of 2
+# Warmup Iteration   1: 2633.336 us/op
+# Warmup Iteration   2: 1764.037 us/op
+# Warmup Iteration   3: 1553.131 us/op
+# Warmup Iteration   4: 1179.708 us/op
+# Warmup Iteration   5: 1184.432 us/op
+Iteration   1: 1171.439 us/op
+Iteration   2: 1291.378 us/op
+Iteration   3: 992.438 us/op
+Iteration   4: 1059.642 us/op
+Iteration   5: 1090.403 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1126.675 ±(99.9%) 167.052 us/op
+
+  Histogram, us/op:
+    [ 900.000,  925.000) = 0
+    [ 925.000,  950.000) = 0
+    [ 950.000,  975.000) = 0
+    [ 975.000, 1000.000) = 2
+    [1000.000, 1025.000) = 1
+    [1025.000, 1050.000) = 0
+    [1050.000, 1075.000) = 1
+    [1075.000, 1100.000) = 1
+    [1100.000, 1125.000) = 0
+    [1125.000, 1150.000) = 0
+    [1150.000, 1175.000) = 1
+    [1175.000, 1200.000) = 1
+    [1200.000, 1225.000) = 1
+    [1225.000, 1250.000) = 0
+    [1250.000, 1275.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =    992.438 us/op
+     p(50.0000) =   1130.921 us/op
+     p(90.0000) =   1287.527 us/op
+     p(95.0000) =   1291.378 us/op
+     p(99.0000) =   1291.378 us/op
+     p(99.9000) =   1291.378 us/op
+     p(99.9900) =   1291.378 us/op
+     p(99.9990) =   1291.378 us/op
+     p(99.9999) =   1291.378 us/op
+    p(100.0000) =   1291.378 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 10000, loadFactor = 0.625)
+
+# Run progress: 79.63% complete, ETA 00:07:43
+# Fork: 1 of 2
+# Warmup Iteration   1: 2065.876 us/op
+# Warmup Iteration   2: 1339.031 us/op
+# Warmup Iteration   3: 1115.249 us/op
+# Warmup Iteration   4: 1413.352 us/op
+# Warmup Iteration   5: 923.329 us/op
+Iteration   1: 921.139 us/op
+Iteration   2: 1254.978 us/op
+Iteration   3: 771.996 us/op
+Iteration   4: 739.736 us/op
+Iteration   5: 756.915 us/op
+
+# Run progress: 79.86% complete, ETA 00:07:37
+# Fork: 2 of 2
+# Warmup Iteration   1: 2053.693 us/op
+# Warmup Iteration   2: 1481.060 us/op
+# Warmup Iteration   3: 1112.529 us/op
+# Warmup Iteration   4: 1147.697 us/op
+# Warmup Iteration   5: 932.878 us/op
+Iteration   1: 922.603 us/op
+Iteration   2: 947.998 us/op
+Iteration   3: 777.415 us/op
+Iteration   4: 755.044 us/op
+Iteration   5: 764.151 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    861.198 ±(99.9%) 242.344 us/op
+
+  Histogram, us/op:
+    [ 700.000,  750.000) = 1
+    [ 750.000,  800.000) = 5
+    [ 800.000,  850.000) = 0
+    [ 850.000,  900.000) = 0
+    [ 900.000,  950.000) = 3
+    [ 950.000, 1000.000) = 0
+    [1000.000, 1050.000) = 0
+    [1050.000, 1100.000) = 0
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 0
+    [1200.000, 1250.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    739.736 us/op
+     p(50.0000) =    774.706 us/op
+     p(90.0000) =   1224.280 us/op
+     p(95.0000) =   1254.978 us/op
+     p(99.0000) =   1254.978 us/op
+     p(99.9000) =   1254.978 us/op
+     p(99.9900) =   1254.978 us/op
+     p(99.9990) =   1254.978 us/op
+     p(99.9999) =   1254.978 us/op
+    p(100.0000) =   1254.978 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 10000, loadFactor = 0.75)
+
+# Run progress: 80.09% complete, ETA 00:07:32
+# Fork: 1 of 2
+# Warmup Iteration   1: 2285.323 us/op
+# Warmup Iteration   2: 1259.175 us/op
+# Warmup Iteration   3: 1190.602 us/op
+# Warmup Iteration   4: 963.842 us/op
+# Warmup Iteration   5: 956.159 us/op
+Iteration   1: 984.522 us/op
+Iteration   2: 912.686 us/op
+Iteration   3: 781.792 us/op
+Iteration   4: 776.014 us/op
+Iteration   5: 784.506 us/op
+
+# Run progress: 80.32% complete, ETA 00:07:27
+# Fork: 2 of 2
+# Warmup Iteration   1: 2073.054 us/op
+# Warmup Iteration   2: 1438.045 us/op
+# Warmup Iteration   3: 1652.288 us/op
+# Warmup Iteration   4: 930.598 us/op
+# Warmup Iteration   5: 937.198 us/op
+Iteration   1: 1315.370 us/op
+Iteration   2: 960.693 us/op
+Iteration   3: 783.471 us/op
+Iteration   4: 756.710 us/op
+Iteration   5: 830.684 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    888.645 ±(99.9%) 258.853 us/op
+
+  Histogram, us/op:
+    [ 700.000,  750.000) = 0
+    [ 750.000,  800.000) = 5
+    [ 800.000,  850.000) = 1
+    [ 850.000,  900.000) = 0
+    [ 900.000,  950.000) = 1
+    [ 950.000, 1000.000) = 2
+    [1000.000, 1050.000) = 0
+    [1050.000, 1100.000) = 0
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 0
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =    756.710 us/op
+     p(50.0000) =    807.595 us/op
+     p(90.0000) =   1282.285 us/op
+     p(95.0000) =   1315.370 us/op
+     p(99.0000) =   1315.370 us/op
+     p(99.9000) =   1315.370 us/op
+     p(99.9900) =   1315.370 us/op
+     p(99.9990) =   1315.370 us/op
+     p(99.9999) =   1315.370 us/op
+    p(100.0000) =   1315.370 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 10000, loadFactor = 0.875)
+
+# Run progress: 80.56% complete, ETA 00:07:22
+# Fork: 1 of 2
+# Warmup Iteration   1: 2225.795 us/op
+# Warmup Iteration   2: 1628.253 us/op
+# Warmup Iteration   3: 1328.226 us/op
+# Warmup Iteration   4: 914.160 us/op
+# Warmup Iteration   5: 901.873 us/op
+Iteration   1: 920.556 us/op
+Iteration   2: 1082.284 us/op
+Iteration   3: 763.859 us/op
+Iteration   4: 784.032 us/op
+Iteration   5: 754.860 us/op
+
+# Run progress: 80.79% complete, ETA 00:07:16
+# Fork: 2 of 2
+# Warmup Iteration   1: 1953.469 us/op
+# Warmup Iteration   2: 1428.259 us/op
+# Warmup Iteration   3: 1117.896 us/op
+# Warmup Iteration   4: 1171.788 us/op
+# Warmup Iteration   5: 942.069 us/op
+Iteration   1: 933.427 us/op
+Iteration   2: 962.501 us/op
+Iteration   3: 809.670 us/op
+Iteration   4: 768.370 us/op
+Iteration   5: 806.001 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    858.556 ±(99.9%) 166.280 us/op
+
+  Histogram, us/op:
+    [ 700.000,  725.000) = 0
+    [ 725.000,  750.000) = 0
+    [ 750.000,  775.000) = 3
+    [ 775.000,  800.000) = 1
+    [ 800.000,  825.000) = 2
+    [ 825.000,  850.000) = 0
+    [ 850.000,  875.000) = 0
+    [ 875.000,  900.000) = 0
+    [ 900.000,  925.000) = 1
+    [ 925.000,  950.000) = 1
+    [ 950.000,  975.000) = 1
+    [ 975.000, 1000.000) = 0
+    [1000.000, 1025.000) = 0
+    [1025.000, 1050.000) = 0
+    [1050.000, 1075.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    754.860 us/op
+     p(50.0000) =    807.835 us/op
+     p(90.0000) =   1070.306 us/op
+     p(95.0000) =   1082.284 us/op
+     p(99.0000) =   1082.284 us/op
+     p(99.9000) =   1082.284 us/op
+     p(99.9900) =   1082.284 us/op
+     p(99.9990) =   1082.284 us/op
+     p(99.9999) =   1082.284 us/op
+    p(100.0000) =   1082.284 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 10000, loadFactor = 1)
+
+# Run progress: 81.02% complete, ETA 00:07:11
+# Fork: 1 of 2
+# Warmup Iteration   1: 2041.845 us/op
+# Warmup Iteration   2: 1288.325 us/op
+# Warmup Iteration   3: 1394.858 us/op
+# Warmup Iteration   4: 954.224 us/op
+# Warmup Iteration   5: 937.838 us/op
+Iteration   1: 968.523 us/op
+Iteration   2: 962.667 us/op
+Iteration   3: 775.456 us/op
+Iteration   4: 838.731 us/op
+Iteration   5: 760.858 us/op
+
+# Run progress: 81.25% complete, ETA 00:07:06
+# Fork: 2 of 2
+# Warmup Iteration   1: 1933.557 us/op
+# Warmup Iteration   2: 1486.977 us/op
+# Warmup Iteration   3: 1100.368 us/op
+# Warmup Iteration   4: 1185.007 us/op
+# Warmup Iteration   5: 919.320 us/op
+Iteration   1: 917.784 us/op
+Iteration   2: 1281.765 us/op
+Iteration   3: 798.871 us/op
+Iteration   4: 925.797 us/op
+Iteration   5: 750.357 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    898.081 ±(99.9%) 239.872 us/op
+
+  Histogram, us/op:
+    [ 700.000,  750.000) = 0
+    [ 750.000,  800.000) = 4
+    [ 800.000,  850.000) = 1
+    [ 850.000,  900.000) = 0
+    [ 900.000,  950.000) = 2
+    [ 950.000, 1000.000) = 2
+    [1000.000, 1050.000) = 0
+    [1050.000, 1100.000) = 0
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 0
+    [1200.000, 1250.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    750.357 us/op
+     p(50.0000) =    878.257 us/op
+     p(90.0000) =   1250.441 us/op
+     p(95.0000) =   1281.765 us/op
+     p(99.0000) =   1281.765 us/op
+     p(99.9000) =   1281.765 us/op
+     p(99.9900) =   1281.765 us/op
+     p(99.9990) =   1281.765 us/op
+     p(99.9999) =   1281.765 us/op
+    p(100.0000) =   1281.765 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 65536, loadFactor = 0.125)
+
+# Run progress: 81.48% complete, ETA 00:07:01
+# Fork: 1 of 2
+# Warmup Iteration   1: 3373.878 us/op
+# Warmup Iteration   2: 2143.069 us/op
+# Warmup Iteration   3: 1860.991 us/op
+# Warmup Iteration   4: 1429.154 us/op
+# Warmup Iteration   5: 1383.780 us/op
+Iteration   1: 1507.281 us/op
+Iteration   2: 1456.079 us/op
+Iteration   3: 1174.127 us/op
+Iteration   4: 1156.147 us/op
+Iteration   5: 1284.513 us/op
+
+# Run progress: 81.71% complete, ETA 00:06:55
+# Fork: 2 of 2
+# Warmup Iteration   1: 3644.656 us/op
+# Warmup Iteration   2: 1991.110 us/op
+# Warmup Iteration   3: 1699.370 us/op
+# Warmup Iteration   4: 1377.985 us/op
+# Warmup Iteration   5: 1469.478 us/op
+Iteration   1: 1471.697 us/op
+Iteration   2: 1487.140 us/op
+Iteration   3: 1306.940 us/op
+Iteration   4: 1165.996 us/op
+Iteration   5: 1213.196 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1322.312 ±(99.9%) 219.186 us/op
+
+  Histogram, us/op:
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 3
+    [1200.000, 1250.000) = 1
+    [1250.000, 1300.000) = 1
+    [1300.000, 1350.000) = 1
+    [1350.000, 1400.000) = 0
+    [1400.000, 1450.000) = 0
+    [1450.000, 1500.000) = 3
+    [1500.000, 1550.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1156.147 us/op
+     p(50.0000) =   1295.727 us/op
+     p(90.0000) =   1505.267 us/op
+     p(95.0000) =   1507.281 us/op
+     p(99.0000) =   1507.281 us/op
+     p(99.9000) =   1507.281 us/op
+     p(99.9900) =   1507.281 us/op
+     p(99.9990) =   1507.281 us/op
+     p(99.9999) =   1507.281 us/op
+    p(100.0000) =   1507.281 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 65536, loadFactor = 0.250)
+
+# Run progress: 81.94% complete, ETA 00:06:50
+# Fork: 1 of 2
+# Warmup Iteration   1: 2082.900 us/op
+# Warmup Iteration   2: 1279.670 us/op
+# Warmup Iteration   3: 1246.659 us/op
+# Warmup Iteration   4: 1201.601 us/op
+# Warmup Iteration   5: 1102.939 us/op
+Iteration   1: 1061.666 us/op
+Iteration   2: 1048.553 us/op
+Iteration   3: 832.536 us/op
+Iteration   4: 825.249 us/op
+Iteration   5: 835.582 us/op
+
+# Run progress: 82.18% complete, ETA 00:06:45
+# Fork: 2 of 2
+# Warmup Iteration   1: 2389.358 us/op
+# Warmup Iteration   2: 1230.612 us/op
+# Warmup Iteration   3: 1418.643 us/op
+# Warmup Iteration   4: 1233.955 us/op
+# Warmup Iteration   5: 968.537 us/op
+Iteration   1: 1013.233 us/op
+Iteration   2: 1142.874 us/op
+Iteration   3: 821.421 us/op
+Iteration   4: 858.433 us/op
+Iteration   5: 821.843 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    926.139 ±(99.9%) 189.556 us/op
+
+  Histogram, us/op:
+    [ 800.000,  825.000) = 2
+    [ 825.000,  850.000) = 3
+    [ 850.000,  875.000) = 1
+    [ 875.000,  900.000) = 0
+    [ 900.000,  925.000) = 0
+    [ 925.000,  950.000) = 0
+    [ 950.000,  975.000) = 0
+    [ 975.000, 1000.000) = 0
+    [1000.000, 1025.000) = 1
+    [1025.000, 1050.000) = 1
+    [1050.000, 1075.000) = 1
+    [1075.000, 1100.000) = 0
+    [1100.000, 1125.000) = 0
+    [1125.000, 1150.000) = 1
+    [1150.000, 1175.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    821.421 us/op
+     p(50.0000) =    847.007 us/op
+     p(90.0000) =   1134.753 us/op
+     p(95.0000) =   1142.874 us/op
+     p(99.0000) =   1142.874 us/op
+     p(99.9000) =   1142.874 us/op
+     p(99.9900) =   1142.874 us/op
+     p(99.9990) =   1142.874 us/op
+     p(99.9999) =   1142.874 us/op
+    p(100.0000) =   1142.874 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 65536, loadFactor = 0.375)
+
+# Run progress: 82.41% complete, ETA 00:06:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 2224.129 us/op
+# Warmup Iteration   2: 1308.250 us/op
+# Warmup Iteration   3: 1420.218 us/op
+# Warmup Iteration   4: 989.846 us/op
+# Warmup Iteration   5: 1026.244 us/op
+Iteration   1: 1020.372 us/op
+Iteration   2: 1362.787 us/op
+Iteration   3: 884.527 us/op
+Iteration   4: 865.158 us/op
+Iteration   5: 862.206 us/op
+
+# Run progress: 82.64% complete, ETA 00:06:34
+# Fork: 2 of 2
+# Warmup Iteration   1: 2341.090 us/op
+# Warmup Iteration   2: 1702.381 us/op
+# Warmup Iteration   3: 1100.752 us/op
+# Warmup Iteration   4: 1047.061 us/op
+# Warmup Iteration   5: 1137.449 us/op
+Iteration   1: 1049.843 us/op
+Iteration   2: 1083.928 us/op
+Iteration   3: 841.712 us/op
+Iteration   4: 817.695 us/op
+Iteration   5: 972.369 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    976.060 ±(99.9%) 249.639 us/op
+
+  Histogram, us/op:
+    [ 800.000,  850.000) = 2
+    [ 850.000,  900.000) = 3
+    [ 900.000,  950.000) = 0
+    [ 950.000, 1000.000) = 1
+    [1000.000, 1050.000) = 2
+    [1050.000, 1100.000) = 1
+    [1100.000, 1150.000) = 0
+    [1150.000, 1200.000) = 0
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    817.695 us/op
+     p(50.0000) =    928.448 us/op
+     p(90.0000) =   1334.901 us/op
+     p(95.0000) =   1362.787 us/op
+     p(99.0000) =   1362.787 us/op
+     p(99.9000) =   1362.787 us/op
+     p(99.9900) =   1362.787 us/op
+     p(99.9990) =   1362.787 us/op
+     p(99.9999) =   1362.787 us/op
+    p(100.0000) =   1362.787 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 65536, loadFactor = 0.5)
+
+# Run progress: 82.87% complete, ETA 00:06:29
+# Fork: 1 of 2
+# Warmup Iteration   1: 2194.065 us/op
+# Warmup Iteration   2: 1419.897 us/op
+# Warmup Iteration   3: 1420.953 us/op
+# Warmup Iteration   4: 1326.405 us/op
+# Warmup Iteration   5: 1000.803 us/op
+Iteration   1: 989.656 us/op
+Iteration   2: 1042.151 us/op
+Iteration   3: 838.868 us/op
+Iteration   4: 839.187 us/op
+Iteration   5: 901.288 us/op
+
+# Run progress: 83.10% complete, ETA 00:06:24
+# Fork: 2 of 2
+# Warmup Iteration   1: 2185.386 us/op
+# Warmup Iteration   2: 1623.968 us/op
+# Warmup Iteration   3: 1214.632 us/op
+# Warmup Iteration   4: 1279.379 us/op
+# Warmup Iteration   5: 992.073 us/op
+Iteration   1: 1010.377 us/op
+Iteration   2: 1008.351 us/op
+Iteration   3: 855.141 us/op
+Iteration   4: 862.732 us/op
+Iteration   5: 880.841 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    922.859 ±(99.9%) 121.523 us/op
+
+  Histogram, us/op:
+    [ 800.000,  825.000) = 0
+    [ 825.000,  850.000) = 2
+    [ 850.000,  875.000) = 2
+    [ 875.000,  900.000) = 1
+    [ 900.000,  925.000) = 1
+    [ 925.000,  950.000) = 0
+    [ 950.000,  975.000) = 0
+    [ 975.000, 1000.000) = 1
+    [1000.000, 1025.000) = 2
+    [1025.000, 1050.000) = 1
+    [1050.000, 1075.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    838.868 us/op
+     p(50.0000) =    891.065 us/op
+     p(90.0000) =   1038.974 us/op
+     p(95.0000) =   1042.151 us/op
+     p(99.0000) =   1042.151 us/op
+     p(99.9000) =   1042.151 us/op
+     p(99.9900) =   1042.151 us/op
+     p(99.9990) =   1042.151 us/op
+     p(99.9999) =   1042.151 us/op
+    p(100.0000) =   1042.151 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 65536, loadFactor = 0.625)
+
+# Run progress: 83.33% complete, ETA 00:06:19
+# Fork: 1 of 2
+# Warmup Iteration   1: 1987.945 us/op
+# Warmup Iteration   2: 1355.725 us/op
+# Warmup Iteration   3: 1492.542 us/op
+# Warmup Iteration   4: 991.630 us/op
+# Warmup Iteration   5: 1107.935 us/op
+Iteration   1: 982.331 us/op
+Iteration   2: 1047.236 us/op
+Iteration   3: 872.338 us/op
+Iteration   4: 842.707 us/op
+Iteration   5: 817.759 us/op
+
+# Run progress: 83.56% complete, ETA 00:06:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 2637.096 us/op
+# Warmup Iteration   2: 1715.814 us/op
+# Warmup Iteration   3: 1118.748 us/op
+# Warmup Iteration   4: 1165.621 us/op
+# Warmup Iteration   5: 1051.875 us/op
+Iteration   1: 1011.867 us/op
+Iteration   2: 1049.048 us/op
+Iteration   3: 959.987 us/op
+Iteration   4: 857.311 us/op
+Iteration   5: 873.982 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    931.457 ±(99.9%) 133.524 us/op
+
+  Histogram, us/op:
+    [ 800.000,  825.000) = 1
+    [ 825.000,  850.000) = 1
+    [ 850.000,  875.000) = 3
+    [ 875.000,  900.000) = 0
+    [ 900.000,  925.000) = 0
+    [ 925.000,  950.000) = 0
+    [ 950.000,  975.000) = 1
+    [ 975.000, 1000.000) = 1
+    [1000.000, 1025.000) = 1
+    [1025.000, 1050.000) = 2
+    [1050.000, 1075.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    817.759 us/op
+     p(50.0000) =    916.985 us/op
+     p(90.0000) =   1048.867 us/op
+     p(95.0000) =   1049.048 us/op
+     p(99.0000) =   1049.048 us/op
+     p(99.9000) =   1049.048 us/op
+     p(99.9900) =   1049.048 us/op
+     p(99.9990) =   1049.048 us/op
+     p(99.9999) =   1049.048 us/op
+    p(100.0000) =   1049.048 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 65536, loadFactor = 0.75)
+
+# Run progress: 83.80% complete, ETA 00:06:08
+# Fork: 1 of 2
+# Warmup Iteration   1: 2098.606 us/op
+# Warmup Iteration   2: 1276.539 us/op
+# Warmup Iteration   3: 1338.038 us/op
+# Warmup Iteration   4: 1007.837 us/op
+# Warmup Iteration   5: 997.663 us/op
+Iteration   1: 1043.311 us/op
+Iteration   2: 1118.990 us/op
+Iteration   3: 843.446 us/op
+Iteration   4: 921.663 us/op
+Iteration   5: 995.524 us/op
+
+# Run progress: 84.03% complete, ETA 00:06:03
+# Fork: 2 of 2
+# Warmup Iteration   1: 2311.899 us/op
+# Warmup Iteration   2: 1342.334 us/op
+# Warmup Iteration   3: 1137.969 us/op
+# Warmup Iteration   4: 1288.859 us/op
+# Warmup Iteration   5: 1188.857 us/op
+Iteration   1: 1006.965 us/op
+Iteration   2: 987.068 us/op
+Iteration   3: 955.356 us/op
+Iteration   4: 820.098 us/op
+Iteration   5: 810.825 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    950.325 ±(99.9%) 153.176 us/op
+
+  Histogram, us/op:
+    [ 800.000,  825.000) = 2
+    [ 825.000,  850.000) = 1
+    [ 850.000,  875.000) = 0
+    [ 875.000,  900.000) = 0
+    [ 900.000,  925.000) = 1
+    [ 925.000,  950.000) = 0
+    [ 950.000,  975.000) = 1
+    [ 975.000, 1000.000) = 2
+    [1000.000, 1025.000) = 1
+    [1025.000, 1050.000) = 1
+    [1050.000, 1075.000) = 0
+    [1075.000, 1100.000) = 0
+    [1100.000, 1125.000) = 1
+    [1125.000, 1150.000) = 0
+    [1150.000, 1175.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    810.825 us/op
+     p(50.0000) =    971.212 us/op
+     p(90.0000) =   1111.422 us/op
+     p(95.0000) =   1118.990 us/op
+     p(99.0000) =   1118.990 us/op
+     p(99.9000) =   1118.990 us/op
+     p(99.9900) =   1118.990 us/op
+     p(99.9990) =   1118.990 us/op
+     p(99.9999) =   1118.990 us/op
+    p(100.0000) =   1118.990 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 65536, loadFactor = 0.875)
+
+# Run progress: 84.26% complete, ETA 00:05:57
+# Fork: 1 of 2
+# Warmup Iteration   1: 2213.487 us/op
+# Warmup Iteration   2: 1399.738 us/op
+# Warmup Iteration   3: 1347.651 us/op
+# Warmup Iteration   4: 1194.863 us/op
+# Warmup Iteration   5: 1037.796 us/op
+Iteration   1: 1053.911 us/op
+Iteration   2: 1028.920 us/op
+Iteration   3: 820.189 us/op
+Iteration   4: 812.664 us/op
+Iteration   5: 812.262 us/op
+
+# Run progress: 84.49% complete, ETA 00:05:52
+# Fork: 2 of 2
+# Warmup Iteration   1: 2586.886 us/op
+# Warmup Iteration   2: 1398.330 us/op
+# Warmup Iteration   3: 1363.378 us/op
+# Warmup Iteration   4: 1141.891 us/op
+# Warmup Iteration   5: 1012.554 us/op
+Iteration   1: 1015.668 us/op
+Iteration   2: 1075.018 us/op
+Iteration   3: 902.968 us/op
+Iteration   4: 850.331 us/op
+Iteration   5: 859.249 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    923.118 ±(99.9%) 163.149 us/op
+
+  Histogram, us/op:
+    [ 800.000,  825.000) = 3
+    [ 825.000,  850.000) = 0
+    [ 850.000,  875.000) = 2
+    [ 875.000,  900.000) = 0
+    [ 900.000,  925.000) = 1
+    [ 925.000,  950.000) = 0
+    [ 950.000,  975.000) = 0
+    [ 975.000, 1000.000) = 0
+    [1000.000, 1025.000) = 1
+    [1025.000, 1050.000) = 1
+    [1050.000, 1075.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =    812.262 us/op
+     p(50.0000) =    881.109 us/op
+     p(90.0000) =   1072.907 us/op
+     p(95.0000) =   1075.018 us/op
+     p(99.0000) =   1075.018 us/op
+     p(99.9000) =   1075.018 us/op
+     p(99.9900) =   1075.018 us/op
+     p(99.9990) =   1075.018 us/op
+     p(99.9999) =   1075.018 us/op
+    p(100.0000) =   1075.018 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 65536, loadFactor = 1)
+
+# Run progress: 84.72% complete, ETA 00:05:47
+# Fork: 1 of 2
+# Warmup Iteration   1: 2139.758 us/op
+# Warmup Iteration   2: 1298.147 us/op
+# Warmup Iteration   3: 1377.796 us/op
+# Warmup Iteration   4: 1391.467 us/op
+# Warmup Iteration   5: 990.567 us/op
+Iteration   1: 973.627 us/op
+Iteration   2: 998.771 us/op
+Iteration   3: 999.336 us/op
+Iteration   4: 961.952 us/op
+Iteration   5: 866.983 us/op
+
+# Run progress: 84.95% complete, ETA 00:05:42
+# Fork: 2 of 2
+# Warmup Iteration   1: 3779.901 us/op
+# Warmup Iteration   2: 2546.364 us/op
+# Warmup Iteration   3: 1241.099 us/op
+# Warmup Iteration   4: 1259.042 us/op
+# Warmup Iteration   5: 1195.320 us/op
+Iteration   1: 1105.368 us/op
+Iteration   2: 1037.141 us/op
+Iteration   3: 875.120 us/op
+Iteration   4: 981.295 us/op
+Iteration   5: 807.377 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =    960.697 ±(99.9%) 133.259 us/op
+
+  Histogram, us/op:
+    [ 800.000,  825.000) = 1
+    [ 825.000,  850.000) = 0
+    [ 850.000,  875.000) = 1
+    [ 875.000,  900.000) = 1
+    [ 900.000,  925.000) = 0
+    [ 925.000,  950.000) = 0
+    [ 950.000,  975.000) = 2
+    [ 975.000, 1000.000) = 3
+    [1000.000, 1025.000) = 0
+    [1025.000, 1050.000) = 1
+    [1050.000, 1075.000) = 0
+    [1075.000, 1100.000) = 0
+    [1100.000, 1125.000) = 1
+    [1125.000, 1150.000) = 0
+    [1150.000, 1175.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    807.377 us/op
+     p(50.0000) =    977.461 us/op
+     p(90.0000) =   1098.545 us/op
+     p(95.0000) =   1105.368 us/op
+     p(99.0000) =   1105.368 us/op
+     p(99.9000) =   1105.368 us/op
+     p(99.9900) =   1105.368 us/op
+     p(99.9990) =   1105.368 us/op
+     p(99.9999) =   1105.368 us/op
+    p(100.0000) =   1105.368 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100000, loadFactor = 0.125)
+
+# Run progress: 85.19% complete, ETA 00:05:36
+# Fork: 1 of 2
+# Warmup Iteration   1: 2210.706 us/op
+# Warmup Iteration   2: 1430.056 us/op
+# Warmup Iteration   3: 1497.520 us/op
+# Warmup Iteration   4: 1094.202 us/op
+# Warmup Iteration   5: 1120.920 us/op
+Iteration   1: 1127.789 us/op
+Iteration   2: 1214.857 us/op
+Iteration   3: 923.718 us/op
+Iteration   4: 1001.471 us/op
+Iteration   5: 1087.892 us/op
+
+# Run progress: 85.42% complete, ETA 00:05:31
+# Fork: 2 of 2
+# Warmup Iteration   1: 2376.913 us/op
+# Warmup Iteration   2: 1708.569 us/op
+# Warmup Iteration   3: 1312.493 us/op
+# Warmup Iteration   4: 1357.920 us/op
+# Warmup Iteration   5: 1112.940 us/op
+Iteration   1: 1155.395 us/op
+Iteration   2: 1091.672 us/op
+Iteration   3: 965.696 us/op
+Iteration   4: 962.354 us/op
+Iteration   5: 961.182 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1049.203 ±(99.9%) 149.906 us/op
+
+  Histogram, us/op:
+    [ 900.000,  925.000) = 1
+    [ 925.000,  950.000) = 0
+    [ 950.000,  975.000) = 3
+    [ 975.000, 1000.000) = 0
+    [1000.000, 1025.000) = 1
+    [1025.000, 1050.000) = 0
+    [1050.000, 1075.000) = 0
+    [1075.000, 1100.000) = 2
+    [1100.000, 1125.000) = 0
+    [1125.000, 1150.000) = 1
+    [1150.000, 1175.000) = 1
+    [1175.000, 1200.000) = 0
+    [1200.000, 1225.000) = 1
+    [1225.000, 1250.000) = 0
+    [1250.000, 1275.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    923.718 us/op
+     p(50.0000) =   1044.682 us/op
+     p(90.0000) =   1208.911 us/op
+     p(95.0000) =   1214.857 us/op
+     p(99.0000) =   1214.857 us/op
+     p(99.9000) =   1214.857 us/op
+     p(99.9900) =   1214.857 us/op
+     p(99.9990) =   1214.857 us/op
+     p(99.9999) =   1214.857 us/op
+    p(100.0000) =   1214.857 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100000, loadFactor = 0.250)
+
+# Run progress: 85.65% complete, ETA 00:05:26
+# Fork: 1 of 2
+# Warmup Iteration   1: 2311.268 us/op
+# Warmup Iteration   2: 1518.903 us/op
+# Warmup Iteration   3: 1113.805 us/op
+# Warmup Iteration   4: 1259.965 us/op
+# Warmup Iteration   5: 1147.915 us/op
+Iteration   1: 1145.699 us/op
+Iteration   2: 1134.648 us/op
+Iteration   3: 978.187 us/op
+Iteration   4: 1036.321 us/op
+Iteration   5: 1014.412 us/op
+
+# Run progress: 85.88% complete, ETA 00:05:21
+# Fork: 2 of 2
+# Warmup Iteration   1: 2562.319 us/op
+# Warmup Iteration   2: 1740.149 us/op
+# Warmup Iteration   3: 1084.938 us/op
+# Warmup Iteration   4: 1187.534 us/op
+# Warmup Iteration   5: 1095.238 us/op
+Iteration   1: 1212.038 us/op
+Iteration   2: 1356.738 us/op
+Iteration   3: 925.792 us/op
+Iteration   4: 984.762 us/op
+Iteration   5: 940.827 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1072.942 ±(99.9%) 207.551 us/op
+
+  Histogram, us/op:
+    [ 900.000,  950.000) = 2
+    [ 950.000, 1000.000) = 2
+    [1000.000, 1050.000) = 2
+    [1050.000, 1100.000) = 0
+    [1100.000, 1150.000) = 2
+    [1150.000, 1200.000) = 0
+    [1200.000, 1250.000) = 1
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    925.792 us/op
+     p(50.0000) =   1025.367 us/op
+     p(90.0000) =   1342.268 us/op
+     p(95.0000) =   1356.738 us/op
+     p(99.0000) =   1356.738 us/op
+     p(99.9000) =   1356.738 us/op
+     p(99.9900) =   1356.738 us/op
+     p(99.9990) =   1356.738 us/op
+     p(99.9999) =   1356.738 us/op
+    p(100.0000) =   1356.738 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100000, loadFactor = 0.375)
+
+# Run progress: 86.11% complete, ETA 00:05:15
+# Fork: 1 of 2
+# Warmup Iteration   1: 2174.287 us/op
+# Warmup Iteration   2: 1577.010 us/op
+# Warmup Iteration   3: 1479.390 us/op
+# Warmup Iteration   4: 1961.836 us/op
+# Warmup Iteration   5: 1243.172 us/op
+Iteration   1: 1131.119 us/op
+Iteration   2: 1194.945 us/op
+Iteration   3: 919.889 us/op
+Iteration   4: 1128.733 us/op
+Iteration   5: 914.146 us/op
+
+# Run progress: 86.34% complete, ETA 00:05:10
+# Fork: 2 of 2
+# Warmup Iteration   1: 2541.090 us/op
+# Warmup Iteration   2: 1571.462 us/op
+# Warmup Iteration   3: 1480.207 us/op
+# Warmup Iteration   4: 1341.689 us/op
+# Warmup Iteration   5: 1275.210 us/op
+Iteration   1: 1179.922 us/op
+Iteration   2: 1180.517 us/op
+Iteration   3: 931.855 us/op
+Iteration   4: 1087.718 us/op
+Iteration   5: 918.437 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1058.728 ±(99.9%) 185.175 us/op
+
+  Histogram, us/op:
+    [ 900.000,  925.000) = 3
+    [ 925.000,  950.000) = 1
+    [ 950.000,  975.000) = 0
+    [ 975.000, 1000.000) = 0
+    [1000.000, 1025.000) = 0
+    [1025.000, 1050.000) = 0
+    [1050.000, 1075.000) = 0
+    [1075.000, 1100.000) = 1
+    [1100.000, 1125.000) = 0
+    [1125.000, 1150.000) = 2
+    [1150.000, 1175.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    914.146 us/op
+     p(50.0000) =   1108.226 us/op
+     p(90.0000) =   1193.502 us/op
+     p(95.0000) =   1194.945 us/op
+     p(99.0000) =   1194.945 us/op
+     p(99.9000) =   1194.945 us/op
+     p(99.9900) =   1194.945 us/op
+     p(99.9990) =   1194.945 us/op
+     p(99.9999) =   1194.945 us/op
+    p(100.0000) =   1194.945 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100000, loadFactor = 0.5)
+
+# Run progress: 86.57% complete, ETA 00:05:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 2154.901 us/op
+# Warmup Iteration   2: 1543.488 us/op
+# Warmup Iteration   3: 1518.152 us/op
+# Warmup Iteration   4: 1073.417 us/op
+# Warmup Iteration   5: 1062.240 us/op
+Iteration   1: 1085.504 us/op
+Iteration   2: 1129.035 us/op
+Iteration   3: 909.475 us/op
+Iteration   4: 922.827 us/op
+Iteration   5: 1082.522 us/op
+
+# Run progress: 86.81% complete, ETA 00:05:00
+# Fork: 2 of 2
+# Warmup Iteration   1: 2238.668 us/op
+# Warmup Iteration   2: 1558.223 us/op
+# Warmup Iteration   3: 1529.838 us/op
+# Warmup Iteration   4: 1124.671 us/op
+# Warmup Iteration   5: 1111.469 us/op
+Iteration   1: 1146.327 us/op
+Iteration   2: 1089.152 us/op
+Iteration   3: 962.377 us/op
+Iteration   4: 985.816 us/op
+Iteration   5: 955.393 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1026.843 ±(99.9%) 133.981 us/op
+
+  Histogram, us/op:
+    [ 900.000,  925.000) = 2
+    [ 925.000,  950.000) = 0
+    [ 950.000,  975.000) = 2
+    [ 975.000, 1000.000) = 1
+    [1000.000, 1025.000) = 0
+    [1025.000, 1050.000) = 0
+    [1050.000, 1075.000) = 0
+    [1075.000, 1100.000) = 3
+    [1100.000, 1125.000) = 0
+    [1125.000, 1150.000) = 2
+    [1150.000, 1175.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    909.475 us/op
+     p(50.0000) =   1034.169 us/op
+     p(90.0000) =   1144.598 us/op
+     p(95.0000) =   1146.327 us/op
+     p(99.0000) =   1146.327 us/op
+     p(99.9000) =   1146.327 us/op
+     p(99.9900) =   1146.327 us/op
+     p(99.9990) =   1146.327 us/op
+     p(99.9999) =   1146.327 us/op
+    p(100.0000) =   1146.327 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100000, loadFactor = 0.625)
+
+# Run progress: 87.04% complete, ETA 00:04:54
+# Fork: 1 of 2
+# Warmup Iteration   1: 2271.810 us/op
+# Warmup Iteration   2: 1576.684 us/op
+# Warmup Iteration   3: 1461.874 us/op
+# Warmup Iteration   4: 1082.359 us/op
+# Warmup Iteration   5: 1422.153 us/op
+Iteration   1: 1225.142 us/op
+Iteration   2: 1312.699 us/op
+Iteration   3: 1137.757 us/op
+Iteration   4: 936.928 us/op
+Iteration   5: 909.949 us/op
+
+# Run progress: 87.27% complete, ETA 00:04:49
+# Fork: 2 of 2
+# Warmup Iteration   1: 2332.292 us/op
+# Warmup Iteration   2: 1404.104 us/op
+# Warmup Iteration   3: 1438.146 us/op
+# Warmup Iteration   4: 1097.647 us/op
+# Warmup Iteration   5: 1101.293 us/op
+Iteration   1: 1072.105 us/op
+Iteration   2: 1178.732 us/op
+Iteration   3: 949.022 us/op
+Iteration   4: 1063.029 us/op
+Iteration   5: 1025.280 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1081.064 ±(99.9%) 200.428 us/op
+
+  Histogram, us/op:
+    [ 900.000,  950.000) = 3
+    [ 950.000, 1000.000) = 0
+    [1000.000, 1050.000) = 1
+    [1050.000, 1100.000) = 2
+    [1100.000, 1150.000) = 1
+    [1150.000, 1200.000) = 1
+    [1200.000, 1250.000) = 1
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =    909.949 us/op
+     p(50.0000) =   1067.567 us/op
+     p(90.0000) =   1303.943 us/op
+     p(95.0000) =   1312.699 us/op
+     p(99.0000) =   1312.699 us/op
+     p(99.9000) =   1312.699 us/op
+     p(99.9900) =   1312.699 us/op
+     p(99.9990) =   1312.699 us/op
+     p(99.9999) =   1312.699 us/op
+    p(100.0000) =   1312.699 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100000, loadFactor = 0.75)
+
+# Run progress: 87.50% complete, ETA 00:04:44
+# Fork: 1 of 2
+# Warmup Iteration   1: 2427.259 us/op
+# Warmup Iteration   2: 1403.411 us/op
+# Warmup Iteration   3: 1751.501 us/op
+# Warmup Iteration   4: 1167.422 us/op
+# Warmup Iteration   5: 1189.073 us/op
+Iteration   1: 1337.353 us/op
+Iteration   2: 1108.544 us/op
+Iteration   3: 924.540 us/op
+Iteration   4: 930.561 us/op
+Iteration   5: 940.540 us/op
+
+# Run progress: 87.73% complete, ETA 00:04:39
+# Fork: 2 of 2
+# Warmup Iteration   1: 2174.897 us/op
+# Warmup Iteration   2: 2013.538 us/op
+# Warmup Iteration   3: 1668.389 us/op
+# Warmup Iteration   4: 1099.118 us/op
+# Warmup Iteration   5: 1210.912 us/op
+Iteration   1: 1070.573 us/op
+Iteration   2: 1150.719 us/op
+Iteration   3: 923.512 us/op
+Iteration   4: 988.107 us/op
+Iteration   5: 924.979 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1029.943 ±(99.9%) 207.780 us/op
+
+  Histogram, us/op:
+    [ 900.000,  950.000) = 5
+    [ 950.000, 1000.000) = 1
+    [1000.000, 1050.000) = 0
+    [1050.000, 1100.000) = 1
+    [1100.000, 1150.000) = 1
+    [1150.000, 1200.000) = 1
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =    923.512 us/op
+     p(50.0000) =    964.324 us/op
+     p(90.0000) =   1318.690 us/op
+     p(95.0000) =   1337.353 us/op
+     p(99.0000) =   1337.353 us/op
+     p(99.9000) =   1337.353 us/op
+     p(99.9900) =   1337.353 us/op
+     p(99.9990) =   1337.353 us/op
+     p(99.9999) =   1337.353 us/op
+    p(100.0000) =   1337.353 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100000, loadFactor = 0.875)
+
+# Run progress: 87.96% complete, ETA 00:04:33
+# Fork: 1 of 2
+# Warmup Iteration   1: 2101.374 us/op
+# Warmup Iteration   2: 1477.260 us/op
+# Warmup Iteration   3: 1674.926 us/op
+# Warmup Iteration   4: 1066.697 us/op
+# Warmup Iteration   5: 1068.940 us/op
+Iteration   1: 1065.176 us/op
+Iteration   2: 1099.860 us/op
+Iteration   3: 949.004 us/op
+Iteration   4: 938.710 us/op
+Iteration   5: 1092.204 us/op
+
+# Run progress: 88.19% complete, ETA 00:04:28
+# Fork: 2 of 2
+# Warmup Iteration   1: 2622.298 us/op
+# Warmup Iteration   2: 1653.212 us/op
+# Warmup Iteration   3: 1148.904 us/op
+# Warmup Iteration   4: 1126.877 us/op
+# Warmup Iteration   5: 1186.641 us/op
+Iteration   1: 1088.744 us/op
+Iteration   2: 1077.619 us/op
+Iteration   3: 934.703 us/op
+Iteration   4: 941.162 us/op
+Iteration   5: 984.286 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1017.147 ±(99.9%) 110.423 us/op
+
+  Histogram, us/op:
+    [ 900.000,  912.500) = 0
+    [ 912.500,  925.000) = 0
+    [ 925.000,  937.500) = 1
+    [ 937.500,  950.000) = 3
+    [ 950.000,  962.500) = 0
+    [ 962.500,  975.000) = 0
+    [ 975.000,  987.500) = 1
+    [ 987.500, 1000.000) = 0
+    [1000.000, 1012.500) = 0
+    [1012.500, 1025.000) = 0
+    [1025.000, 1037.500) = 0
+    [1037.500, 1050.000) = 0
+    [1050.000, 1062.500) = 0
+    [1062.500, 1075.000) = 1
+    [1075.000, 1087.500) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =    934.703 us/op
+     p(50.0000) =   1024.731 us/op
+     p(90.0000) =   1099.094 us/op
+     p(95.0000) =   1099.860 us/op
+     p(99.0000) =   1099.860 us/op
+     p(99.9000) =   1099.860 us/op
+     p(99.9900) =   1099.860 us/op
+     p(99.9990) =   1099.860 us/op
+     p(99.9999) =   1099.860 us/op
+    p(100.0000) =   1099.860 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 100000, loadFactor = 1)
+
+# Run progress: 88.43% complete, ETA 00:04:23
+# Fork: 1 of 2
+# Warmup Iteration   1: 2108.779 us/op
+# Warmup Iteration   2: 1613.402 us/op
+# Warmup Iteration   3: 1791.495 us/op
+# Warmup Iteration   4: 1098.346 us/op
+# Warmup Iteration   5: 1048.424 us/op
+Iteration   1: 1029.977 us/op
+Iteration   2: 1351.001 us/op
+Iteration   3: 903.429 us/op
+Iteration   4: 958.527 us/op
+Iteration   5: 938.222 us/op
+
+# Run progress: 88.66% complete, ETA 00:04:17
+# Fork: 2 of 2
+# Warmup Iteration   1: 2380.677 us/op
+# Warmup Iteration   2: 1726.114 us/op
+# Warmup Iteration   3: 1135.982 us/op
+# Warmup Iteration   4: 1085.673 us/op
+# Warmup Iteration   5: 1102.524 us/op
+Iteration   1: 1160.220 us/op
+Iteration   2: 1103.456 us/op
+Iteration   3: 947.008 us/op
+Iteration   4: 930.246 us/op
+Iteration   5: 1058.585 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1038.067 ±(99.9%) 208.974 us/op
+
+  Histogram, us/op:
+    [ 900.000,  950.000) = 4
+    [ 950.000, 1000.000) = 1
+    [1000.000, 1050.000) = 1
+    [1050.000, 1100.000) = 1
+    [1100.000, 1150.000) = 1
+    [1150.000, 1200.000) = 1
+    [1200.000, 1250.000) = 0
+    [1250.000, 1300.000) = 0
+    [1300.000, 1350.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =    903.429 us/op
+     p(50.0000) =    994.252 us/op
+     p(90.0000) =   1331.923 us/op
+     p(95.0000) =   1351.001 us/op
+     p(99.0000) =   1351.001 us/op
+     p(99.9000) =   1351.001 us/op
+     p(99.9900) =   1351.001 us/op
+     p(99.9990) =   1351.001 us/op
+     p(99.9999) =   1351.001 us/op
+    p(100.0000) =   1351.001 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 524288, loadFactor = 0.125)
+
+# Run progress: 88.89% complete, ETA 00:04:12
+# Fork: 1 of 2
+# Warmup Iteration   1: 2958.722 us/op
+# Warmup Iteration   2: 2480.737 us/op
+# Warmup Iteration   3: 2466.749 us/op
+# Warmup Iteration   4: 1982.715 us/op
+# Warmup Iteration   5: 1982.725 us/op
+Iteration   1: 1664.251 us/op
+Iteration   2: 2100.367 us/op
+Iteration   3: 1584.887 us/op
+Iteration   4: 1785.520 us/op
+Iteration   5: 1899.299 us/op
+
+# Run progress: 89.12% complete, ETA 00:04:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 3507.593 us/op
+# Warmup Iteration   2: 2112.630 us/op
+# Warmup Iteration   3: 2255.443 us/op
+# Warmup Iteration   4: 1932.140 us/op
+# Warmup Iteration   5: 2117.416 us/op
+Iteration   1: 1715.143 us/op
+Iteration   2: 2103.994 us/op
+Iteration   3: 1722.729 us/op
+Iteration   4: 1903.080 us/op
+Iteration   5: 2097.928 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1857.720 ±(99.9%) 292.399 us/op
+
+  Histogram, us/op:
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 1
+    [1600.000, 1650.000) = 0
+    [1650.000, 1700.000) = 1
+    [1700.000, 1750.000) = 2
+    [1750.000, 1800.000) = 1
+    [1800.000, 1850.000) = 0
+    [1850.000, 1900.000) = 1
+    [1900.000, 1950.000) = 1
+    [1950.000, 2000.000) = 0
+    [2000.000, 2050.000) = 0
+    [2050.000, 2100.000) = 1
+    [2100.000, 2150.000) = 2
+
+  Percentiles, us/op:
+      p(0.0000) =   1584.887 us/op
+     p(50.0000) =   1842.410 us/op
+     p(90.0000) =   2103.631 us/op
+     p(95.0000) =   2103.994 us/op
+     p(99.0000) =   2103.994 us/op
+     p(99.9000) =   2103.994 us/op
+     p(99.9900) =   2103.994 us/op
+     p(99.9990) =   2103.994 us/op
+     p(99.9999) =   2103.994 us/op
+    p(100.0000) =   2103.994 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 524288, loadFactor = 0.250)
+
+# Run progress: 89.35% complete, ETA 00:04:02
+# Fork: 1 of 2
+# Warmup Iteration   1: 3284.596 us/op
+# Warmup Iteration   2: 2329.048 us/op
+# Warmup Iteration   3: 2844.648 us/op
+# Warmup Iteration   4: 1866.587 us/op
+# Warmup Iteration   5: 1889.421 us/op
+Iteration   1: 1695.562 us/op
+Iteration   2: 2191.418 us/op
+Iteration   3: 1661.414 us/op
+Iteration   4: 1722.836 us/op
+Iteration   5: 1949.034 us/op
+
+# Run progress: 89.58% complete, ETA 00:03:56
+# Fork: 2 of 2
+# Warmup Iteration   1: 2747.993 us/op
+# Warmup Iteration   2: 2732.874 us/op
+# Warmup Iteration   3: 2689.656 us/op
+# Warmup Iteration   4: 1711.338 us/op
+# Warmup Iteration   5: 1913.148 us/op
+Iteration   1: 1741.304 us/op
+Iteration   2: 2036.681 us/op
+Iteration   3: 2081.258 us/op
+Iteration   4: 1784.858 us/op
+Iteration   5: 1753.336 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1861.770 ±(99.9%) 282.531 us/op
+
+  Histogram, us/op:
+    [1600.000, 1650.000) = 0
+    [1650.000, 1700.000) = 2
+    [1700.000, 1750.000) = 2
+    [1750.000, 1800.000) = 2
+    [1800.000, 1850.000) = 0
+    [1850.000, 1900.000) = 0
+    [1900.000, 1950.000) = 1
+    [1950.000, 2000.000) = 0
+    [2000.000, 2050.000) = 1
+    [2050.000, 2100.000) = 1
+    [2100.000, 2150.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1661.414 us/op
+     p(50.0000) =   1769.097 us/op
+     p(90.0000) =   2180.402 us/op
+     p(95.0000) =   2191.418 us/op
+     p(99.0000) =   2191.418 us/op
+     p(99.9000) =   2191.418 us/op
+     p(99.9900) =   2191.418 us/op
+     p(99.9990) =   2191.418 us/op
+     p(99.9999) =   2191.418 us/op
+    p(100.0000) =   2191.418 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 524288, loadFactor = 0.375)
+
+# Run progress: 89.81% complete, ETA 00:03:51
+# Fork: 1 of 2
+# Warmup Iteration   1: 3125.728 us/op
+# Warmup Iteration   2: 2060.255 us/op
+# Warmup Iteration   3: 2872.893 us/op
+# Warmup Iteration   4: 1954.469 us/op
+# Warmup Iteration   5: 2078.623 us/op
+Iteration   1: 1782.148 us/op
+Iteration   2: 2052.840 us/op
+Iteration   3: 1560.946 us/op
+Iteration   4: 1888.350 us/op
+Iteration   5: 1730.840 us/op
+
+# Run progress: 90.05% complete, ETA 00:03:46
+# Fork: 2 of 2
+# Warmup Iteration   1: 2908.442 us/op
+# Warmup Iteration   2: 2107.673 us/op
+# Warmup Iteration   3: 2686.963 us/op
+# Warmup Iteration   4: 1907.717 us/op
+# Warmup Iteration   5: 1945.786 us/op
+Iteration   1: 1699.605 us/op
+Iteration   2: 2006.112 us/op
+Iteration   3: 1644.545 us/op
+Iteration   4: 1670.095 us/op
+Iteration   5: 1865.920 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1790.140 ±(99.9%) 242.190 us/op
+
+  Histogram, us/op:
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 1
+    [1600.000, 1650.000) = 1
+    [1650.000, 1700.000) = 2
+    [1700.000, 1750.000) = 1
+    [1750.000, 1800.000) = 1
+    [1800.000, 1850.000) = 0
+    [1850.000, 1900.000) = 2
+    [1900.000, 1950.000) = 0
+    [1950.000, 2000.000) = 0
+    [2000.000, 2050.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1560.946 us/op
+     p(50.0000) =   1756.494 us/op
+     p(90.0000) =   2048.167 us/op
+     p(95.0000) =   2052.840 us/op
+     p(99.0000) =   2052.840 us/op
+     p(99.9000) =   2052.840 us/op
+     p(99.9900) =   2052.840 us/op
+     p(99.9990) =   2052.840 us/op
+     p(99.9999) =   2052.840 us/op
+    p(100.0000) =   2052.840 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 524288, loadFactor = 0.5)
+
+# Run progress: 90.28% complete, ETA 00:03:41
+# Fork: 1 of 2
+# Warmup Iteration   1: 2882.231 us/op
+# Warmup Iteration   2: 2877.446 us/op
+# Warmup Iteration   3: 2871.754 us/op
+# Warmup Iteration   4: 1767.101 us/op
+# Warmup Iteration   5: 1796.523 us/op
+Iteration   1: 1758.540 us/op
+Iteration   2: 2028.211 us/op
+Iteration   3: 1685.196 us/op
+Iteration   4: 1958.035 us/op
+Iteration   5: 1667.811 us/op
+
+# Run progress: 90.51% complete, ETA 00:03:35
+# Fork: 2 of 2
+# Warmup Iteration   1: 3413.351 us/op
+# Warmup Iteration   2: 2244.566 us/op
+# Warmup Iteration   3: 2372.100 us/op
+# Warmup Iteration   4: 1843.388 us/op
+# Warmup Iteration   5: 1828.714 us/op
+Iteration   1: 1665.908 us/op
+Iteration   2: 2216.473 us/op
+Iteration   3: 1730.746 us/op
+Iteration   4: 1931.837 us/op
+Iteration   5: 1779.807 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1842.256 ±(99.9%) 278.585 us/op
+
+  Histogram, us/op:
+    [1600.000, 1650.000) = 0
+    [1650.000, 1700.000) = 3
+    [1700.000, 1750.000) = 1
+    [1750.000, 1800.000) = 2
+    [1800.000, 1850.000) = 0
+    [1850.000, 1900.000) = 0
+    [1900.000, 1950.000) = 1
+    [1950.000, 2000.000) = 1
+    [2000.000, 2050.000) = 1
+    [2050.000, 2100.000) = 0
+    [2100.000, 2150.000) = 0
+    [2150.000, 2200.000) = 0
+    [2200.000, 2250.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1665.908 us/op
+     p(50.0000) =   1769.173 us/op
+     p(90.0000) =   2197.647 us/op
+     p(95.0000) =   2216.473 us/op
+     p(99.0000) =   2216.473 us/op
+     p(99.9000) =   2216.473 us/op
+     p(99.9900) =   2216.473 us/op
+     p(99.9990) =   2216.473 us/op
+     p(99.9999) =   2216.473 us/op
+    p(100.0000) =   2216.473 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 524288, loadFactor = 0.625)
+
+# Run progress: 90.74% complete, ETA 00:03:30
+# Fork: 1 of 2
+# Warmup Iteration   1: 2787.125 us/op
+# Warmup Iteration   2: 2159.117 us/op
+# Warmup Iteration   3: 2492.851 us/op
+# Warmup Iteration   4: 1741.617 us/op
+# Warmup Iteration   5: 1805.259 us/op
+Iteration   1: 1683.114 us/op
+Iteration   2: 2334.600 us/op
+Iteration   3: 1837.884 us/op
+Iteration   4: 1830.318 us/op
+Iteration   5: 1774.482 us/op
+
+# Run progress: 90.97% complete, ETA 00:03:25
+# Fork: 2 of 2
+# Warmup Iteration   1: 3200.095 us/op
+# Warmup Iteration   2: 2079.946 us/op
+# Warmup Iteration   3: 2818.038 us/op
+# Warmup Iteration   4: 2083.315 us/op
+# Warmup Iteration   5: 1988.343 us/op
+Iteration   1: 1696.181 us/op
+Iteration   2: 1932.933 us/op
+Iteration   3: 1583.217 us/op
+Iteration   4: 1716.958 us/op
+Iteration   5: 1634.670 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1802.436 ±(99.9%) 323.505 us/op
+
+  Histogram, us/op:
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 1
+    [1600.000, 1650.000) = 1
+    [1650.000, 1700.000) = 2
+    [1700.000, 1750.000) = 1
+    [1750.000, 1800.000) = 1
+    [1800.000, 1850.000) = 2
+    [1850.000, 1900.000) = 0
+    [1900.000, 1950.000) = 1
+    [1950.000, 2000.000) = 0
+    [2000.000, 2050.000) = 0
+    [2050.000, 2100.000) = 0
+    [2100.000, 2150.000) = 0
+    [2150.000, 2200.000) = 0
+    [2200.000, 2250.000) = 0
+    [2250.000, 2300.000) = 0
+    [2300.000, 2350.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1583.217 us/op
+     p(50.0000) =   1745.720 us/op
+     p(90.0000) =   2294.433 us/op
+     p(95.0000) =   2334.600 us/op
+     p(99.0000) =   2334.600 us/op
+     p(99.9000) =   2334.600 us/op
+     p(99.9900) =   2334.600 us/op
+     p(99.9990) =   2334.600 us/op
+     p(99.9999) =   2334.600 us/op
+    p(100.0000) =   2334.600 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 524288, loadFactor = 0.75)
+
+# Run progress: 91.20% complete, ETA 00:03:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 2817.749 us/op
+# Warmup Iteration   2: 2512.348 us/op
+# Warmup Iteration   3: 2131.022 us/op
+# Warmup Iteration   4: 1778.509 us/op
+# Warmup Iteration   5: 2052.163 us/op
+Iteration   1: 1678.160 us/op
+Iteration   2: 2124.284 us/op
+Iteration   3: 1556.587 us/op
+Iteration   4: 1683.724 us/op
+Iteration   5: 1588.368 us/op
+
+# Run progress: 91.44% complete, ETA 00:03:14
+# Fork: 2 of 2
+# Warmup Iteration   1: 3203.977 us/op
+# Warmup Iteration   2: 2237.987 us/op
+# Warmup Iteration   3: 2055.564 us/op
+# Warmup Iteration   4: 1676.906 us/op
+# Warmup Iteration   5: 1928.251 us/op
+Iteration   1: 1875.890 us/op
+Iteration   2: 2317.454 us/op
+Iteration   3: 1682.890 us/op
+Iteration   4: 1670.880 us/op
+Iteration   5: 1558.707 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1773.694 ±(99.9%) 388.001 us/op
+
+  Histogram, us/op:
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 3
+    [1600.000, 1650.000) = 0
+    [1650.000, 1700.000) = 4
+    [1700.000, 1750.000) = 0
+    [1750.000, 1800.000) = 0
+    [1800.000, 1850.000) = 0
+    [1850.000, 1900.000) = 1
+    [1900.000, 1950.000) = 0
+    [1950.000, 2000.000) = 0
+    [2000.000, 2050.000) = 0
+    [2050.000, 2100.000) = 0
+    [2100.000, 2150.000) = 1
+    [2150.000, 2200.000) = 0
+    [2200.000, 2250.000) = 0
+    [2250.000, 2300.000) = 0
+    [2300.000, 2350.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1556.587 us/op
+     p(50.0000) =   1680.525 us/op
+     p(90.0000) =   2298.137 us/op
+     p(95.0000) =   2317.454 us/op
+     p(99.0000) =   2317.454 us/op
+     p(99.9000) =   2317.454 us/op
+     p(99.9900) =   2317.454 us/op
+     p(99.9990) =   2317.454 us/op
+     p(99.9999) =   2317.454 us/op
+    p(100.0000) =   2317.454 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 524288, loadFactor = 0.875)
+
+# Run progress: 91.67% complete, ETA 00:03:09
+# Fork: 1 of 2
+# Warmup Iteration   1: 2991.742 us/op
+# Warmup Iteration   2: 2287.915 us/op
+# Warmup Iteration   3: 2194.848 us/op
+# Warmup Iteration   4: 1761.945 us/op
+# Warmup Iteration   5: 1849.487 us/op
+Iteration   1: 1831.241 us/op
+Iteration   2: 2038.973 us/op
+Iteration   3: 1567.642 us/op
+Iteration   4: 1803.195 us/op
+Iteration   5: 1731.493 us/op
+
+# Run progress: 91.90% complete, ETA 00:03:04
+# Fork: 2 of 2
+# Warmup Iteration   1: 2823.166 us/op
+# Warmup Iteration   2: 2224.525 us/op
+# Warmup Iteration   3: 3062.410 us/op
+# Warmup Iteration   4: 1797.123 us/op
+# Warmup Iteration   5: 2209.908 us/op
+Iteration   1: 1726.440 us/op
+Iteration   2: 1905.586 us/op
+Iteration   3: 1632.397 us/op
+Iteration   4: 1780.534 us/op
+Iteration   5: 1719.046 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1773.655 ±(99.9%) 202.473 us/op
+
+  Histogram, us/op:
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 1
+    [1600.000, 1650.000) = 1
+    [1650.000, 1700.000) = 0
+    [1700.000, 1750.000) = 3
+    [1750.000, 1800.000) = 1
+    [1800.000, 1850.000) = 2
+    [1850.000, 1900.000) = 0
+    [1900.000, 1950.000) = 1
+    [1950.000, 2000.000) = 0
+    [2000.000, 2050.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   1567.642 us/op
+     p(50.0000) =   1756.014 us/op
+     p(90.0000) =   2025.634 us/op
+     p(95.0000) =   2038.973 us/op
+     p(99.0000) =   2038.973 us/op
+     p(99.9000) =   2038.973 us/op
+     p(99.9900) =   2038.973 us/op
+     p(99.9990) =   2038.973 us/op
+     p(99.9999) =   2038.973 us/op
+    p(100.0000) =   2038.973 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 524288, loadFactor = 1)
+
+# Run progress: 92.13% complete, ETA 00:02:58
+# Fork: 1 of 2
+# Warmup Iteration   1: 3289.491 us/op
+# Warmup Iteration   2: 2111.853 us/op
+# Warmup Iteration   3: 2737.293 us/op
+# Warmup Iteration   4: 1814.079 us/op
+# Warmup Iteration   5: 1761.344 us/op
+Iteration   1: 1697.595 us/op
+Iteration   2: 2197.759 us/op
+Iteration   3: 1579.172 us/op
+Iteration   4: 1732.492 us/op
+Iteration   5: 2192.105 us/op
+
+# Run progress: 92.36% complete, ETA 00:02:53
+# Fork: 2 of 2
+# Warmup Iteration   1: 2756.883 us/op
+# Warmup Iteration   2: 2343.212 us/op
+# Warmup Iteration   3: 2333.759 us/op
+# Warmup Iteration   4: 1733.975 us/op
+# Warmup Iteration   5: 1776.638 us/op
+Iteration   1: 1711.290 us/op
+Iteration   2: 2150.030 us/op
+Iteration   3: 1723.309 us/op
+Iteration   4: 1711.666 us/op
+Iteration   5: 1669.707 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   1836.513 ±(99.9%) 364.622 us/op
+
+  Histogram, us/op:
+    [1500.000, 1550.000) = 0
+    [1550.000, 1600.000) = 1
+    [1600.000, 1650.000) = 0
+    [1650.000, 1700.000) = 2
+    [1700.000, 1750.000) = 4
+    [1750.000, 1800.000) = 0
+    [1800.000, 1850.000) = 0
+    [1850.000, 1900.000) = 0
+    [1900.000, 1950.000) = 0
+    [1950.000, 2000.000) = 0
+    [2000.000, 2050.000) = 0
+    [2050.000, 2100.000) = 0
+    [2100.000, 2150.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   1579.172 us/op
+     p(50.0000) =   1717.488 us/op
+     p(90.0000) =   2197.194 us/op
+     p(95.0000) =   2197.759 us/op
+     p(99.0000) =   2197.759 us/op
+     p(99.9000) =   2197.759 us/op
+     p(99.9900) =   2197.759 us/op
+     p(99.9990) =   2197.759 us/op
+     p(99.9999) =   2197.759 us/op
+    p(100.0000) =   2197.759 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1000000, loadFactor = 0.125)
+
+# Run progress: 92.59% complete, ETA 00:02:48
+# Fork: 1 of 2
+# Warmup Iteration   1: 4500.739 us/op
+# Warmup Iteration   2: 3384.397 us/op
+# Warmup Iteration   3: 2958.180 us/op
+# Warmup Iteration   4: 2856.160 us/op
+# Warmup Iteration   5: 2725.588 us/op
+Iteration   1: 2663.340 us/op
+Iteration   2: 2620.365 us/op
+Iteration   3: 2680.676 us/op
+Iteration   4: 2871.266 us/op
+Iteration   5: 3329.186 us/op
+
+# Run progress: 92.82% complete, ETA 00:02:43
+# Fork: 2 of 2
+# Warmup Iteration   1: 4027.852 us/op
+# Warmup Iteration   2: 3560.758 us/op
+# Warmup Iteration   3: 2674.748 us/op
+# Warmup Iteration   4: 2655.444 us/op
+# Warmup Iteration   5: 2505.227 us/op
+Iteration   1: 2684.190 us/op
+Iteration   2: 2622.052 us/op
+Iteration   3: 2748.389 us/op
+Iteration   4: 2479.720 us/op
+Iteration   5: 2797.144 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2749.633 ±(99.9%) 347.420 us/op
+
+  Histogram, us/op:
+    [2400.000, 2500.000) = 1
+    [2500.000, 2600.000) = 0
+    [2600.000, 2700.000) = 5
+    [2700.000, 2800.000) = 2
+    [2800.000, 2900.000) = 1
+    [2900.000, 3000.000) = 0
+    [3000.000, 3100.000) = 0
+    [3100.000, 3200.000) = 0
+    [3200.000, 3300.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   2479.720 us/op
+     p(50.0000) =   2682.433 us/op
+     p(90.0000) =   3283.394 us/op
+     p(95.0000) =   3329.186 us/op
+     p(99.0000) =   3329.186 us/op
+     p(99.9000) =   3329.186 us/op
+     p(99.9900) =   3329.186 us/op
+     p(99.9990) =   3329.186 us/op
+     p(99.9999) =   3329.186 us/op
+    p(100.0000) =   3329.186 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1000000, loadFactor = 0.250)
+
+# Run progress: 93.06% complete, ETA 00:02:37
+# Fork: 1 of 2
+# Warmup Iteration   1: 3561.574 us/op
+# Warmup Iteration   2: 3753.099 us/op
+# Warmup Iteration   3: 3343.708 us/op
+# Warmup Iteration   4: 2477.706 us/op
+# Warmup Iteration   5: 2535.975 us/op
+Iteration   1: 2429.211 us/op
+Iteration   2: 2677.150 us/op
+Iteration   3: 2528.054 us/op
+Iteration   4: 2499.465 us/op
+Iteration   5: 2316.225 us/op
+
+# Run progress: 93.29% complete, ETA 00:02:32
+# Fork: 2 of 2
+# Warmup Iteration   1: 4348.857 us/op
+# Warmup Iteration   2: 3119.021 us/op
+# Warmup Iteration   3: 3088.824 us/op
+# Warmup Iteration   4: 2654.814 us/op
+# Warmup Iteration   5: 2679.435 us/op
+Iteration   1: 2655.253 us/op
+Iteration   2: 2915.168 us/op
+Iteration   3: 2352.680 us/op
+Iteration   4: 2296.889 us/op
+Iteration   5: 2942.644 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2561.274 ±(99.9%) 352.323 us/op
+
+  Histogram, us/op:
+    [2200.000, 2250.000) = 0
+    [2250.000, 2300.000) = 1
+    [2300.000, 2350.000) = 1
+    [2350.000, 2400.000) = 1
+    [2400.000, 2450.000) = 1
+    [2450.000, 2500.000) = 1
+    [2500.000, 2550.000) = 1
+    [2550.000, 2600.000) = 0
+    [2600.000, 2650.000) = 0
+    [2650.000, 2700.000) = 2
+    [2700.000, 2750.000) = 0
+    [2750.000, 2800.000) = 0
+    [2800.000, 2850.000) = 0
+    [2850.000, 2900.000) = 0
+    [2900.000, 2950.000) = 2
+
+  Percentiles, us/op:
+      p(0.0000) =   2296.889 us/op
+     p(50.0000) =   2513.760 us/op
+     p(90.0000) =   2939.896 us/op
+     p(95.0000) =   2942.644 us/op
+     p(99.0000) =   2942.644 us/op
+     p(99.9000) =   2942.644 us/op
+     p(99.9900) =   2942.644 us/op
+     p(99.9990) =   2942.644 us/op
+     p(99.9999) =   2942.644 us/op
+    p(100.0000) =   2942.644 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1000000, loadFactor = 0.375)
+
+# Run progress: 93.52% complete, ETA 00:02:27
+# Fork: 1 of 2
+# Warmup Iteration   1: 3653.856 us/op
+# Warmup Iteration   2: 3285.275 us/op
+# Warmup Iteration   3: 3364.406 us/op
+# Warmup Iteration   4: 2842.964 us/op
+# Warmup Iteration   5: 2501.281 us/op
+Iteration   1: 2505.968 us/op
+Iteration   2: 2773.296 us/op
+Iteration   3: 2679.357 us/op
+Iteration   4: 2805.069 us/op
+Iteration   5: 2395.494 us/op
+
+# Run progress: 93.75% complete, ETA 00:02:22
+# Fork: 2 of 2
+# Warmup Iteration   1: 4012.158 us/op
+# Warmup Iteration   2: 3193.649 us/op
+# Warmup Iteration   3: 2955.588 us/op
+# Warmup Iteration   4: 2860.190 us/op
+# Warmup Iteration   5: 2830.270 us/op
+Iteration   1: 2436.934 us/op
+Iteration   2: 2701.921 us/op
+Iteration   3: 2516.330 us/op
+Iteration   4: 2380.636 us/op
+Iteration   5: 2356.486 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2555.149 ±(99.9%) 257.129 us/op
+
+  Histogram, us/op:
+    [2300.000, 2350.000) = 0
+    [2350.000, 2400.000) = 3
+    [2400.000, 2450.000) = 1
+    [2450.000, 2500.000) = 0
+    [2500.000, 2550.000) = 2
+    [2550.000, 2600.000) = 0
+    [2600.000, 2650.000) = 0
+    [2650.000, 2700.000) = 1
+    [2700.000, 2750.000) = 1
+    [2750.000, 2800.000) = 1
+    [2800.000, 2850.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   2356.486 us/op
+     p(50.0000) =   2511.149 us/op
+     p(90.0000) =   2801.892 us/op
+     p(95.0000) =   2805.069 us/op
+     p(99.0000) =   2805.069 us/op
+     p(99.9000) =   2805.069 us/op
+     p(99.9900) =   2805.069 us/op
+     p(99.9990) =   2805.069 us/op
+     p(99.9999) =   2805.069 us/op
+    p(100.0000) =   2805.069 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1000000, loadFactor = 0.5)
+
+# Run progress: 93.98% complete, ETA 00:02:16
+# Fork: 1 of 2
+# Warmup Iteration   1: 4638.051 us/op
+# Warmup Iteration   2: 3773.098 us/op
+# Warmup Iteration   3: 2561.880 us/op
+# Warmup Iteration   4: 3329.566 us/op
+# Warmup Iteration   5: 2718.397 us/op
+Iteration   1: 2801.524 us/op
+Iteration   2: 2869.054 us/op
+Iteration   3: 3206.133 us/op
+Iteration   4: 3041.279 us/op
+Iteration   5: 3245.894 us/op
+
+# Run progress: 94.21% complete, ETA 00:02:11
+# Fork: 2 of 2
+# Warmup Iteration   1: 4403.869 us/op
+# Warmup Iteration   2: 3445.245 us/op
+# Warmup Iteration   3: 2710.011 us/op
+# Warmup Iteration   4: 2645.587 us/op
+# Warmup Iteration   5: 2551.766 us/op
+Iteration   1: 2732.149 us/op
+Iteration   2: 2630.657 us/op
+Iteration   3: 2564.514 us/op
+Iteration   4: 2352.469 us/op
+Iteration   5: 2416.537 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2786.021 ±(99.9%) 467.580 us/op
+
+  Histogram, us/op:
+    [2300.000, 2400.000) = 1
+    [2400.000, 2500.000) = 1
+    [2500.000, 2600.000) = 1
+    [2600.000, 2700.000) = 1
+    [2700.000, 2800.000) = 1
+    [2800.000, 2900.000) = 2
+    [2900.000, 3000.000) = 0
+    [3000.000, 3100.000) = 1
+    [3100.000, 3200.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   2352.469 us/op
+     p(50.0000) =   2766.837 us/op
+     p(90.0000) =   3241.918 us/op
+     p(95.0000) =   3245.894 us/op
+     p(99.0000) =   3245.894 us/op
+     p(99.9000) =   3245.894 us/op
+     p(99.9900) =   3245.894 us/op
+     p(99.9990) =   3245.894 us/op
+     p(99.9999) =   3245.894 us/op
+    p(100.0000) =   3245.894 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1000000, loadFactor = 0.625)
+
+# Run progress: 94.44% complete, ETA 00:02:06
+# Fork: 1 of 2
+# Warmup Iteration   1: 3722.903 us/op
+# Warmup Iteration   2: 3396.139 us/op
+# Warmup Iteration   3: 3903.615 us/op
+# Warmup Iteration   4: 2861.127 us/op
+# Warmup Iteration   5: 2500.674 us/op
+Iteration   1: 2419.481 us/op
+Iteration   2: 2732.332 us/op
+Iteration   3: 3253.374 us/op
+Iteration   4: 2555.230 us/op
+Iteration   5: 2693.315 us/op
+
+# Run progress: 94.68% complete, ETA 00:02:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 3689.213 us/op
+# Warmup Iteration   2: 3361.262 us/op
+# Warmup Iteration   3: 2969.637 us/op
+# Warmup Iteration   4: 2495.888 us/op
+# Warmup Iteration   5: 2616.150 us/op
+Iteration   1: 2814.049 us/op
+Iteration   2: 2751.420 us/op
+Iteration   3: 2432.039 us/op
+Iteration   4: 2677.037 us/op
+Iteration   5: 2418.519 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2674.680 ±(99.9%) 379.729 us/op
+
+  Histogram, us/op:
+    [2400.000, 2450.000) = 3
+    [2450.000, 2500.000) = 0
+    [2500.000, 2550.000) = 0
+    [2550.000, 2600.000) = 1
+    [2600.000, 2650.000) = 0
+    [2650.000, 2700.000) = 2
+    [2700.000, 2750.000) = 1
+    [2750.000, 2800.000) = 1
+    [2800.000, 2850.000) = 1
+    [2850.000, 2900.000) = 0
+    [2900.000, 2950.000) = 0
+    [2950.000, 3000.000) = 0
+    [3000.000, 3050.000) = 0
+    [3050.000, 3100.000) = 0
+    [3100.000, 3150.000) = 0
+    [3150.000, 3200.000) = 0
+    [3200.000, 3250.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   2418.519 us/op
+     p(50.0000) =   2685.176 us/op
+     p(90.0000) =   3209.442 us/op
+     p(95.0000) =   3253.374 us/op
+     p(99.0000) =   3253.374 us/op
+     p(99.9000) =   3253.374 us/op
+     p(99.9900) =   3253.374 us/op
+     p(99.9990) =   3253.374 us/op
+     p(99.9999) =   3253.374 us/op
+    p(100.0000) =   3253.374 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1000000, loadFactor = 0.75)
+
+# Run progress: 94.91% complete, ETA 00:01:55
+# Fork: 1 of 2
+# Warmup Iteration   1: 3641.220 us/op
+# Warmup Iteration   2: 3704.514 us/op
+# Warmup Iteration   3: 2622.298 us/op
+# Warmup Iteration   4: 2502.009 us/op
+# Warmup Iteration   5: 2698.908 us/op
+Iteration   1: 2749.379 us/op
+Iteration   2: 3319.154 us/op
+Iteration   3: 2438.273 us/op
+Iteration   4: 2454.462 us/op
+Iteration   5: 2485.564 us/op
+
+# Run progress: 95.14% complete, ETA 00:01:50
+# Fork: 2 of 2
+# Warmup Iteration   1: 4458.162 us/op
+# Warmup Iteration   2: 3229.823 us/op
+# Warmup Iteration   3: 3116.840 us/op
+# Warmup Iteration   4: 2522.548 us/op
+# Warmup Iteration   5: 2427.274 us/op
+Iteration   1: 3027.633 us/op
+Iteration   2: 2784.966 us/op
+Iteration   3: 2445.356 us/op
+Iteration   4: 2379.040 us/op
+Iteration   5: 2348.203 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2643.203 ±(99.9%) 487.165 us/op
+
+  Histogram, us/op:
+    [2300.000, 2400.000) = 2
+    [2400.000, 2500.000) = 4
+    [2500.000, 2600.000) = 0
+    [2600.000, 2700.000) = 0
+    [2700.000, 2800.000) = 2
+    [2800.000, 2900.000) = 0
+    [2900.000, 3000.000) = 0
+    [3000.000, 3100.000) = 1
+    [3100.000, 3200.000) = 0
+    [3200.000, 3300.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   2348.203 us/op
+     p(50.0000) =   2470.013 us/op
+     p(90.0000) =   3290.002 us/op
+     p(95.0000) =   3319.154 us/op
+     p(99.0000) =   3319.154 us/op
+     p(99.9000) =   3319.154 us/op
+     p(99.9900) =   3319.154 us/op
+     p(99.9990) =   3319.154 us/op
+     p(99.9999) =   3319.154 us/op
+    p(100.0000) =   3319.154 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1000000, loadFactor = 0.875)
+
+# Run progress: 95.37% complete, ETA 00:01:45
+# Fork: 1 of 2
+# Warmup Iteration   1: 3619.666 us/op
+# Warmup Iteration   2: 3177.135 us/op
+# Warmup Iteration   3: 4300.132 us/op
+# Warmup Iteration   4: 2910.877 us/op
+# Warmup Iteration   5: 2549.624 us/op
+Iteration   1: 2604.963 us/op
+Iteration   2: 2656.935 us/op
+Iteration   3: 2494.342 us/op
+Iteration   4: 2703.067 us/op
+Iteration   5: 2869.359 us/op
+
+# Run progress: 95.60% complete, ETA 00:01:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 3877.896 us/op
+# Warmup Iteration   2: 3398.621 us/op
+# Warmup Iteration   3: 2568.316 us/op
+# Warmup Iteration   4: 2492.844 us/op
+# Warmup Iteration   5: 2479.139 us/op
+Iteration   1: 2824.896 us/op
+Iteration   2: 2649.959 us/op
+Iteration   3: 2387.090 us/op
+Iteration   4: 2512.472 us/op
+Iteration   5: 2498.580 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2620.166 ±(99.9%) 230.881 us/op
+
+  Histogram, us/op:
+    [2300.000, 2350.000) = 0
+    [2350.000, 2400.000) = 1
+    [2400.000, 2450.000) = 0
+    [2450.000, 2500.000) = 2
+    [2500.000, 2550.000) = 1
+    [2550.000, 2600.000) = 0
+    [2600.000, 2650.000) = 2
+    [2650.000, 2700.000) = 1
+    [2700.000, 2750.000) = 1
+    [2750.000, 2800.000) = 0
+    [2800.000, 2850.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   2387.090 us/op
+     p(50.0000) =   2627.461 us/op
+     p(90.0000) =   2864.913 us/op
+     p(95.0000) =   2869.359 us/op
+     p(99.0000) =   2869.359 us/op
+     p(99.9000) =   2869.359 us/op
+     p(99.9900) =   2869.359 us/op
+     p(99.9990) =   2869.359 us/op
+     p(99.9999) =   2869.359 us/op
+    p(100.0000) =   2869.359 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1000000, loadFactor = 1)
+
+# Run progress: 95.83% complete, ETA 00:01:34
+# Fork: 1 of 2
+# Warmup Iteration   1: 3944.002 us/op
+# Warmup Iteration   2: 3490.184 us/op
+# Warmup Iteration   3: 3363.019 us/op
+# Warmup Iteration   4: 2801.386 us/op
+# Warmup Iteration   5: 2520.836 us/op
+Iteration   1: 2787.219 us/op
+Iteration   2: 2701.591 us/op
+Iteration   3: 2597.710 us/op
+Iteration   4: 2433.023 us/op
+Iteration   5: 2665.533 us/op
+
+# Run progress: 96.06% complete, ETA 00:01:29
+# Fork: 2 of 2
+# Warmup Iteration   1: 3999.726 us/op
+# Warmup Iteration   2: 3243.260 us/op
+# Warmup Iteration   3: 2983.485 us/op
+# Warmup Iteration   4: 2441.472 us/op
+# Warmup Iteration   5: 2719.422 us/op
+Iteration   1: 2762.564 us/op
+Iteration   2: 2645.986 us/op
+Iteration   3: 2352.078 us/op
+Iteration   4: 2566.341 us/op
+Iteration   5: 2480.161 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2599.221 ±(99.9%) 215.612 us/op
+
+  Histogram, us/op:
+    [2300.000, 2350.000) = 0
+    [2350.000, 2400.000) = 1
+    [2400.000, 2450.000) = 1
+    [2450.000, 2500.000) = 1
+    [2500.000, 2550.000) = 0
+    [2550.000, 2600.000) = 2
+    [2600.000, 2650.000) = 1
+    [2650.000, 2700.000) = 1
+    [2700.000, 2750.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   2352.078 us/op
+     p(50.0000) =   2621.848 us/op
+     p(90.0000) =   2784.754 us/op
+     p(95.0000) =   2787.219 us/op
+     p(99.0000) =   2787.219 us/op
+     p(99.9000) =   2787.219 us/op
+     p(99.9900) =   2787.219 us/op
+     p(99.9990) =   2787.219 us/op
+     p(99.9999) =   2787.219 us/op
+    p(100.0000) =   2787.219 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1048576, loadFactor = 0.125)
+
+# Run progress: 96.30% complete, ETA 00:01:24
+# Fork: 1 of 2
+# Warmup Iteration   1: 3521.763 us/op
+# Warmup Iteration   2: 3601.818 us/op
+# Warmup Iteration   3: 2924.563 us/op
+# Warmup Iteration   4: 2500.971 us/op
+# Warmup Iteration   5: 2746.046 us/op
+Iteration   1: 2872.407 us/op
+Iteration   2: 2640.795 us/op
+Iteration   3: 2598.194 us/op
+Iteration   4: 3082.715 us/op
+Iteration   5: 3276.150 us/op
+
+# Run progress: 96.53% complete, ETA 00:01:18
+# Fork: 2 of 2
+# Warmup Iteration   1: 4020.032 us/op
+# Warmup Iteration   2: 3684.896 us/op
+# Warmup Iteration   3: 2556.891 us/op
+# Warmup Iteration   4: 2514.924 us/op
+# Warmup Iteration   5: 2908.654 us/op
+Iteration   1: 2811.541 us/op
+Iteration   2: 3001.325 us/op
+Iteration   3: 2357.537 us/op
+Iteration   4: 2750.710 us/op
+Iteration   5: 2365.994 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2775.737 ±(99.9%) 450.552 us/op
+
+  Histogram, us/op:
+    [2300.000, 2400.000) = 2
+    [2400.000, 2500.000) = 0
+    [2500.000, 2600.000) = 1
+    [2600.000, 2700.000) = 1
+    [2700.000, 2800.000) = 1
+    [2800.000, 2900.000) = 2
+    [2900.000, 3000.000) = 0
+    [3000.000, 3100.000) = 2
+    [3100.000, 3200.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   2357.537 us/op
+     p(50.0000) =   2781.126 us/op
+     p(90.0000) =   3256.807 us/op
+     p(95.0000) =   3276.150 us/op
+     p(99.0000) =   3276.150 us/op
+     p(99.9000) =   3276.150 us/op
+     p(99.9900) =   3276.150 us/op
+     p(99.9990) =   3276.150 us/op
+     p(99.9999) =   3276.150 us/op
+    p(100.0000) =   3276.150 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1048576, loadFactor = 0.250)
+
+# Run progress: 96.76% complete, ETA 00:01:13
+# Fork: 1 of 2
+# Warmup Iteration   1: 3500.662 us/op
+# Warmup Iteration   2: 3426.961 us/op
+# Warmup Iteration   3: 2958.149 us/op
+# Warmup Iteration   4: 2475.703 us/op
+# Warmup Iteration   5: 2599.808 us/op
+Iteration   1: 2932.418 us/op
+Iteration   2: 2815.496 us/op
+Iteration   3: 2362.782 us/op
+Iteration   4: 2520.297 us/op
+Iteration   5: 2464.919 us/op
+
+# Run progress: 96.99% complete, ETA 00:01:08
+# Fork: 2 of 2
+# Warmup Iteration   1: 4362.825 us/op
+# Warmup Iteration   2: 3173.449 us/op
+# Warmup Iteration   3: 3042.434 us/op
+# Warmup Iteration   4: 2434.810 us/op
+# Warmup Iteration   5: 2535.524 us/op
+Iteration   1: 2804.524 us/op
+Iteration   2: 2874.361 us/op
+Iteration   3: 2457.263 us/op
+Iteration   4: 2456.416 us/op
+Iteration   5: 2607.543 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2629.602 ±(99.9%) 313.587 us/op
+
+  Histogram, us/op:
+    [2300.000, 2350.000) = 0
+    [2350.000, 2400.000) = 1
+    [2400.000, 2450.000) = 0
+    [2450.000, 2500.000) = 3
+    [2500.000, 2550.000) = 1
+    [2550.000, 2600.000) = 0
+    [2600.000, 2650.000) = 1
+    [2650.000, 2700.000) = 0
+    [2700.000, 2750.000) = 0
+    [2750.000, 2800.000) = 0
+    [2800.000, 2850.000) = 2
+    [2850.000, 2900.000) = 1
+    [2900.000, 2950.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   2362.782 us/op
+     p(50.0000) =   2563.920 us/op
+     p(90.0000) =   2926.612 us/op
+     p(95.0000) =   2932.418 us/op
+     p(99.0000) =   2932.418 us/op
+     p(99.9000) =   2932.418 us/op
+     p(99.9900) =   2932.418 us/op
+     p(99.9990) =   2932.418 us/op
+     p(99.9999) =   2932.418 us/op
+    p(100.0000) =   2932.418 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1048576, loadFactor = 0.375)
+
+# Run progress: 97.22% complete, ETA 00:01:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 4088.297 us/op
+# Warmup Iteration   2: 3090.501 us/op
+# Warmup Iteration   3: 3778.995 us/op
+# Warmup Iteration   4: 2470.520 us/op
+# Warmup Iteration   5: 2711.394 us/op
+Iteration   1: 3162.664 us/op
+Iteration   2: 2932.202 us/op
+Iteration   3: 2666.379 us/op
+Iteration   4: 3069.803 us/op
+Iteration   5: 3145.646 us/op
+
+# Run progress: 97.45% complete, ETA 00:00:57
+# Fork: 2 of 2
+# Warmup Iteration   1: 3864.010 us/op
+# Warmup Iteration   2: 3391.549 us/op
+# Warmup Iteration   3: 2662.911 us/op
+# Warmup Iteration   4: 2554.074 us/op
+# Warmup Iteration   5: 2669.829 us/op
+Iteration   1: 2803.590 us/op
+Iteration   2: 3295.514 us/op
+Iteration   3: 2445.784 us/op
+Iteration   4: 2575.655 us/op
+Iteration   5: 2737.218 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2883.446 ±(99.9%) 426.064 us/op
+
+  Histogram, us/op:
+    [2400.000, 2450.000) = 1
+    [2450.000, 2500.000) = 0
+    [2500.000, 2550.000) = 0
+    [2550.000, 2600.000) = 1
+    [2600.000, 2650.000) = 0
+    [2650.000, 2700.000) = 1
+    [2700.000, 2750.000) = 1
+    [2750.000, 2800.000) = 0
+    [2800.000, 2850.000) = 1
+    [2850.000, 2900.000) = 0
+    [2900.000, 2950.000) = 1
+    [2950.000, 3000.000) = 0
+    [3000.000, 3050.000) = 0
+    [3050.000, 3100.000) = 1
+    [3100.000, 3150.000) = 1
+    [3150.000, 3200.000) = 1
+    [3200.000, 3250.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   2445.784 us/op
+     p(50.0000) =   2867.896 us/op
+     p(90.0000) =   3282.229 us/op
+     p(95.0000) =   3295.514 us/op
+     p(99.0000) =   3295.514 us/op
+     p(99.9000) =   3295.514 us/op
+     p(99.9900) =   3295.514 us/op
+     p(99.9990) =   3295.514 us/op
+     p(99.9999) =   3295.514 us/op
+    p(100.0000) =   3295.514 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1048576, loadFactor = 0.5)
+
+# Run progress: 97.69% complete, ETA 00:00:52
+# Fork: 1 of 2
+# Warmup Iteration   1: 3710.001 us/op
+# Warmup Iteration   2: 3665.223 us/op
+# Warmup Iteration   3: 2559.351 us/op
+# Warmup Iteration   4: 2497.030 us/op
+# Warmup Iteration   5: 2529.964 us/op
+Iteration   1: 2717.538 us/op
+Iteration   2: 2885.491 us/op
+Iteration   3: 2407.789 us/op
+Iteration   4: 2370.663 us/op
+Iteration   5: 2721.692 us/op
+
+# Run progress: 97.92% complete, ETA 00:00:47
+# Fork: 2 of 2
+# Warmup Iteration   1: 3484.946 us/op
+# Warmup Iteration   2: 3205.412 us/op
+# Warmup Iteration   3: 3135.334 us/op
+# Warmup Iteration   4: 2480.131 us/op
+# Warmup Iteration   5: 2526.873 us/op
+Iteration   1: 2497.015 us/op
+Iteration   2: 2625.955 us/op
+Iteration   3: 2467.273 us/op
+Iteration   4: 2328.256 us/op
+Iteration   5: 2678.510 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2570.018 ±(99.9%) 275.835 us/op
+
+  Histogram, us/op:
+    [2300.000, 2350.000) = 1
+    [2350.000, 2400.000) = 1
+    [2400.000, 2450.000) = 1
+    [2450.000, 2500.000) = 2
+    [2500.000, 2550.000) = 0
+    [2550.000, 2600.000) = 0
+    [2600.000, 2650.000) = 1
+    [2650.000, 2700.000) = 1
+    [2700.000, 2750.000) = 2
+    [2750.000, 2800.000) = 0
+    [2800.000, 2850.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   2328.256 us/op
+     p(50.0000) =   2561.485 us/op
+     p(90.0000) =   2869.111 us/op
+     p(95.0000) =   2885.491 us/op
+     p(99.0000) =   2885.491 us/op
+     p(99.9000) =   2885.491 us/op
+     p(99.9900) =   2885.491 us/op
+     p(99.9990) =   2885.491 us/op
+     p(99.9999) =   2885.491 us/op
+    p(100.0000) =   2885.491 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1048576, loadFactor = 0.625)
+
+# Run progress: 98.15% complete, ETA 00:00:42
+# Fork: 1 of 2
+# Warmup Iteration   1: 3766.083 us/op
+# Warmup Iteration   2: 3584.926 us/op
+# Warmup Iteration   3: 2665.458 us/op
+# Warmup Iteration   4: 2655.951 us/op
+# Warmup Iteration   5: 2547.317 us/op
+Iteration   1: 2862.563 us/op
+Iteration   2: 2616.182 us/op
+Iteration   3: 2481.208 us/op
+Iteration   4: 2424.949 us/op
+Iteration   5: 2938.145 us/op
+
+# Run progress: 98.38% complete, ETA 00:00:36
+# Fork: 2 of 2
+# Warmup Iteration   1: 4060.981 us/op
+# Warmup Iteration   2: 3133.566 us/op
+# Warmup Iteration   3: 2934.107 us/op
+# Warmup Iteration   4: 2689.623 us/op
+# Warmup Iteration   5: 2502.125 us/op
+Iteration   1: 2482.836 us/op
+Iteration   2: 2764.872 us/op
+Iteration   3: 2464.879 us/op
+Iteration   4: 2437.780 us/op
+Iteration   5: 2557.991 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2603.141 ±(99.9%) 283.043 us/op
+
+  Histogram, us/op:
+    [2400.000, 2450.000) = 2
+    [2450.000, 2500.000) = 3
+    [2500.000, 2550.000) = 0
+    [2550.000, 2600.000) = 1
+    [2600.000, 2650.000) = 1
+    [2650.000, 2700.000) = 0
+    [2700.000, 2750.000) = 0
+    [2750.000, 2800.000) = 1
+    [2800.000, 2850.000) = 0
+    [2850.000, 2900.000) = 1
+    [2900.000, 2950.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   2424.949 us/op
+     p(50.0000) =   2520.413 us/op
+     p(90.0000) =   2930.587 us/op
+     p(95.0000) =   2938.145 us/op
+     p(99.0000) =   2938.145 us/op
+     p(99.9000) =   2938.145 us/op
+     p(99.9900) =   2938.145 us/op
+     p(99.9990) =   2938.145 us/op
+     p(99.9999) =   2938.145 us/op
+    p(100.0000) =   2938.145 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1048576, loadFactor = 0.75)
+
+# Run progress: 98.61% complete, ETA 00:00:31
+# Fork: 1 of 2
+# Warmup Iteration   1: 4012.780 us/op
+# Warmup Iteration   2: 3385.499 us/op
+# Warmup Iteration   3: 2518.876 us/op
+# Warmup Iteration   4: 2455.437 us/op
+# Warmup Iteration   5: 2878.742 us/op
+Iteration   1: 2769.387 us/op
+Iteration   2: 2684.925 us/op
+Iteration   3: 2393.073 us/op
+Iteration   4: 2509.998 us/op
+Iteration   5: 2393.099 us/op
+
+# Run progress: 98.84% complete, ETA 00:00:26
+# Fork: 2 of 2
+# Warmup Iteration   1: 4380.720 us/op
+# Warmup Iteration   2: 3039.461 us/op
+# Warmup Iteration   3: 3102.121 us/op
+# Warmup Iteration   4: 2466.037 us/op
+# Warmup Iteration   5: 2662.692 us/op
+Iteration   1: 2744.486 us/op
+Iteration   2: 2680.238 us/op
+Iteration   3: 2584.435 us/op
+Iteration   4: 2363.002 us/op
+Iteration   5: 2366.386 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2548.903 ±(99.9%) 247.821 us/op
+
+  Histogram, us/op:
+    [2300.000, 2350.000) = 0
+    [2350.000, 2400.000) = 4
+    [2400.000, 2450.000) = 0
+    [2450.000, 2500.000) = 0
+    [2500.000, 2550.000) = 1
+    [2550.000, 2600.000) = 1
+    [2600.000, 2650.000) = 0
+    [2650.000, 2700.000) = 2
+    [2700.000, 2750.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   2363.002 us/op
+     p(50.0000) =   2547.217 us/op
+     p(90.0000) =   2766.897 us/op
+     p(95.0000) =   2769.387 us/op
+     p(99.0000) =   2769.387 us/op
+     p(99.9000) =   2769.387 us/op
+     p(99.9900) =   2769.387 us/op
+     p(99.9990) =   2769.387 us/op
+     p(99.9999) =   2769.387 us/op
+    p(100.0000) =   2769.387 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1048576, loadFactor = 0.875)
+
+# Run progress: 99.07% complete, ETA 00:00:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 3801.635 us/op
+# Warmup Iteration   2: 3161.660 us/op
+# Warmup Iteration   3: 3142.057 us/op
+# Warmup Iteration   4: 2791.766 us/op
+# Warmup Iteration   5: 2682.793 us/op
+Iteration   1: 2449.257 us/op
+Iteration   2: 2629.047 us/op
+Iteration   3: 2367.738 us/op
+Iteration   4: 2930.229 us/op
+Iteration   5: 2561.796 us/op
+
+# Run progress: 99.31% complete, ETA 00:00:15
+# Fork: 2 of 2
+# Warmup Iteration   1: 3910.341 us/op
+# Warmup Iteration   2: 3339.590 us/op
+# Warmup Iteration   3: 2848.987 us/op
+# Warmup Iteration   4: 2789.460 us/op
+# Warmup Iteration   5: 2851.574 us/op
+Iteration   1: 2533.919 us/op
+Iteration   2: 2691.226 us/op
+Iteration   3: 2563.182 us/op
+Iteration   4: 2448.745 us/op
+Iteration   5: 2604.372 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2577.951 ±(99.9%) 236.430 us/op
+
+  Histogram, us/op:
+    [2300.000, 2350.000) = 0
+    [2350.000, 2400.000) = 1
+    [2400.000, 2450.000) = 2
+    [2450.000, 2500.000) = 0
+    [2500.000, 2550.000) = 1
+    [2550.000, 2600.000) = 2
+    [2600.000, 2650.000) = 2
+    [2650.000, 2700.000) = 1
+    [2700.000, 2750.000) = 0
+    [2750.000, 2800.000) = 0
+    [2800.000, 2850.000) = 0
+    [2850.000, 2900.000) = 0
+    [2900.000, 2950.000) = 1
+
+  Percentiles, us/op:
+      p(0.0000) =   2367.738 us/op
+     p(50.0000) =   2562.489 us/op
+     p(90.0000) =   2906.329 us/op
+     p(95.0000) =   2930.229 us/op
+     p(99.0000) =   2930.229 us/op
+     p(99.9000) =   2930.229 us/op
+     p(99.9900) =   2930.229 us/op
+     p(99.9990) =   2930.229 us/op
+     p(99.9999) =   2930.229 us/op
+    p(100.0000) =   2930.229 us/op
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.2, OpenJDK 64-Bit Server VM, 17.0.2+8-86
+# VM invoker: /Users/alanbyrne/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/bin/java
+# VM options: -ea -Xms512m -Xmx5000m
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, single-shot each, 10000 calls per op
+# Measurement: 5 iterations, single-shot each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode
+# Parameters: (initialCapacity = 1048576, loadFactor = 1)
+
+# Run progress: 99.54% complete, ETA 00:00:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 3590.195 us/op
+# Warmup Iteration   2: 3634.508 us/op
+# Warmup Iteration   3: 3229.954 us/op
+# Warmup Iteration   4: 2486.304 us/op
+# Warmup Iteration   5: 2488.215 us/op
+Iteration   1: 2607.474 us/op
+Iteration   2: 2547.062 us/op
+Iteration   3: 2351.813 us/op
+Iteration   4: 2591.879 us/op
+Iteration   5: 2532.275 us/op
+
+# Run progress: 99.77% complete, ETA 00:00:05
+# Fork: 2 of 2
+# Warmup Iteration   1: 3848.950 us/op
+# Warmup Iteration   2: 3044.437 us/op
+# Warmup Iteration   3: 3129.514 us/op
+# Warmup Iteration   4: 2706.392 us/op
+# Warmup Iteration   5: 2582.670 us/op
+Iteration   1: 2693.894 us/op
+Iteration   2: 2579.497 us/op
+Iteration   3: 2515.055 us/op
+Iteration   4: 2409.314 us/op
+Iteration   5: 2641.818 us/op
+
+
+Result "com.abyrne133.benchmarking.JavaHashMapBenchMarkPut.putTerribleHashCode":
+  N = 10
+  mean =   2547.008 ±(99.9%) 155.809 us/op
+
+  Histogram, us/op:
+    [2300.000, 2325.000) = 0
+    [2325.000, 2350.000) = 0
+    [2350.000, 2375.000) = 1
+    [2375.000, 2400.000) = 0
+    [2400.000, 2425.000) = 1
+    [2425.000, 2450.000) = 0
+    [2450.000, 2475.000) = 0
+    [2475.000, 2500.000) = 0
+    [2500.000, 2525.000) = 1
+    [2525.000, 2550.000) = 2
+    [2550.000, 2575.000) = 0
+    [2575.000, 2600.000) = 2
+    [2600.000, 2625.000) = 1
+    [2625.000, 2650.000) = 1
+    [2650.000, 2675.000) = 0
+
+  Percentiles, us/op:
+      p(0.0000) =   2351.813 us/op
+     p(50.0000) =   2563.279 us/op
+     p(90.0000) =   2688.686 us/op
+     p(95.0000) =   2693.894 us/op
+     p(99.0000) =   2693.894 us/op
+     p(99.9000) =   2693.894 us/op
+     p(99.9900) =   2693.894 us/op
+     p(99.9990) =   2693.894 us/op
+     p(99.9999) =   2693.894 us/op
+    p(100.0000) =   2693.894 us/op
+
+
+# Run complete. Total time: 00:37:54
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                    (initialCapacity)  (loadFactor)  Mode  Cnt     Score      Error  Units
+JavaHashMapBenchMarkPut.put                                 16         0.125    ss   10  1475.923 ±  316.357  us/op
+JavaHashMapBenchMarkPut.put                                 16         0.250    ss   10  1295.924 ±  411.061  us/op
+JavaHashMapBenchMarkPut.put                                 16         0.375    ss   10  1389.994 ±  241.395  us/op
+JavaHashMapBenchMarkPut.put                                 16           0.5    ss   10  1461.206 ±  293.612  us/op
+JavaHashMapBenchMarkPut.put                                 16         0.625    ss   10  1260.966 ±  287.739  us/op
+JavaHashMapBenchMarkPut.put                                 16          0.75    ss   10  1272.626 ±  207.923  us/op
+JavaHashMapBenchMarkPut.put                                 16         0.875    ss   10  1408.899 ±  205.397  us/op
+JavaHashMapBenchMarkPut.put                                 16             1    ss   10  1470.499 ±  300.897  us/op
+JavaHashMapBenchMarkPut.put                                100         0.125    ss   10  1893.731 ±  359.858  us/op
+JavaHashMapBenchMarkPut.put                                100         0.250    ss   10  1278.201 ±  278.513  us/op
+JavaHashMapBenchMarkPut.put                                100         0.375    ss   10  1374.287 ±  213.247  us/op
+JavaHashMapBenchMarkPut.put                                100           0.5    ss   10  1462.674 ±  337.199  us/op
+JavaHashMapBenchMarkPut.put                                100         0.625    ss   10  1211.559 ±  116.462  us/op
+JavaHashMapBenchMarkPut.put                                100          0.75    ss   10  1307.326 ±  197.647  us/op
+JavaHashMapBenchMarkPut.put                                100         0.875    ss   10  1316.927 ±  250.841  us/op
+JavaHashMapBenchMarkPut.put                                100             1    ss   10  1491.315 ±  209.518  us/op
+JavaHashMapBenchMarkPut.put                               1024         0.125    ss   10  1503.897 ±  331.603  us/op
+JavaHashMapBenchMarkPut.put                               1024         0.250    ss   10  1275.967 ±  249.297  us/op
+JavaHashMapBenchMarkPut.put                               1024         0.375    ss   10  1311.804 ±  161.707  us/op
+JavaHashMapBenchMarkPut.put                               1024           0.5    ss   10  1423.823 ±  211.805  us/op
+JavaHashMapBenchMarkPut.put                               1024         0.625    ss   10  1211.932 ±  150.612  us/op
+JavaHashMapBenchMarkPut.put                               1024          0.75    ss   10  1283.243 ±  219.687  us/op
+JavaHashMapBenchMarkPut.put                               1024         0.875    ss   10  1359.379 ±  251.392  us/op
+JavaHashMapBenchMarkPut.put                               1024             1    ss   10  1366.774 ±  245.136  us/op
+JavaHashMapBenchMarkPut.put                              10000         0.125    ss   10  1436.356 ±  289.025  us/op
+JavaHashMapBenchMarkPut.put                              10000         0.250    ss   10  1315.226 ±  162.928  us/op
+JavaHashMapBenchMarkPut.put                              10000         0.375    ss   10  1080.212 ±  240.395  us/op
+JavaHashMapBenchMarkPut.put                              10000           0.5    ss   10  1139.018 ±  202.653  us/op
+JavaHashMapBenchMarkPut.put                              10000         0.625    ss   10   911.251 ±  348.947  us/op
+JavaHashMapBenchMarkPut.put                              10000          0.75    ss   10   853.695 ±  200.211  us/op
+JavaHashMapBenchMarkPut.put                              10000         0.875    ss   10   840.816 ±  176.938  us/op
+JavaHashMapBenchMarkPut.put                              10000             1    ss   10   841.530 ±  152.576  us/op
+JavaHashMapBenchMarkPut.put                              65536         0.125    ss   10  1378.647 ±  407.708  us/op
+JavaHashMapBenchMarkPut.put                              65536         0.250    ss   10   912.947 ±  196.450  us/op
+JavaHashMapBenchMarkPut.put                              65536         0.375    ss   10   914.080 ±  172.878  us/op
+JavaHashMapBenchMarkPut.put                              65536           0.5    ss   10   925.378 ±  133.423  us/op
+JavaHashMapBenchMarkPut.put                              65536         0.625    ss   10   953.181 ±  279.015  us/op
+JavaHashMapBenchMarkPut.put                              65536          0.75    ss   10   934.738 ±  199.540  us/op
+JavaHashMapBenchMarkPut.put                              65536         0.875    ss   10   916.456 ±  149.067  us/op
+JavaHashMapBenchMarkPut.put                              65536             1    ss   10   908.486 ±  200.429  us/op
+JavaHashMapBenchMarkPut.put                             100000         0.125    ss   10  1099.135 ±  320.975  us/op
+JavaHashMapBenchMarkPut.put                             100000         0.250    ss   10   983.089 ±  125.937  us/op
+JavaHashMapBenchMarkPut.put                             100000         0.375    ss   10  1022.741 ±  165.166  us/op
+JavaHashMapBenchMarkPut.put                             100000           0.5    ss   10   983.662 ±  117.615  us/op
+JavaHashMapBenchMarkPut.put                             100000         0.625    ss   10  1088.502 ±  271.044  us/op
+JavaHashMapBenchMarkPut.put                             100000          0.75    ss   10  1057.227 ±  296.604  us/op
+JavaHashMapBenchMarkPut.put                             100000         0.875    ss   10  1028.896 ±  256.078  us/op
+JavaHashMapBenchMarkPut.put                             100000             1    ss   10  1054.644 ±  261.947  us/op
+JavaHashMapBenchMarkPut.put                             524288         0.125    ss   10  1771.647 ±  305.121  us/op
+JavaHashMapBenchMarkPut.put                             524288         0.250    ss   10  1803.864 ±  416.611  us/op
+JavaHashMapBenchMarkPut.put                             524288         0.375    ss   10  1786.174 ±  406.097  us/op
+JavaHashMapBenchMarkPut.put                             524288           0.5    ss   10  1892.383 ±  412.908  us/op
+JavaHashMapBenchMarkPut.put                             524288         0.625    ss   10  1794.637 ±  352.070  us/op
+JavaHashMapBenchMarkPut.put                             524288          0.75    ss   10  1828.681 ±  313.225  us/op
+JavaHashMapBenchMarkPut.put                             524288         0.875    ss   10  1759.372 ±  297.546  us/op
+JavaHashMapBenchMarkPut.put                             524288             1    ss   10  1819.893 ±  406.060  us/op
+JavaHashMapBenchMarkPut.put                            1000000         0.125    ss   10  2670.766 ±  445.623  us/op
+JavaHashMapBenchMarkPut.put                            1000000         0.250    ss   10  2695.244 ±  384.382  us/op
+JavaHashMapBenchMarkPut.put                            1000000         0.375    ss   10  2830.882 ±  446.472  us/op
+JavaHashMapBenchMarkPut.put                            1000000           0.5    ss   10  2681.990 ±  269.570  us/op
+JavaHashMapBenchMarkPut.put                            1000000         0.625    ss   10  2500.348 ±  137.199  us/op
+JavaHashMapBenchMarkPut.put                            1000000          0.75    ss   10  2975.847 ±  338.656  us/op
+JavaHashMapBenchMarkPut.put                            1000000         0.875    ss   10  2566.136 ±  267.499  us/op
+JavaHashMapBenchMarkPut.put                            1000000             1    ss   10  2516.300 ±  289.753  us/op
+JavaHashMapBenchMarkPut.put                            1048576         0.125    ss   10  2690.416 ±  392.570  us/op
+JavaHashMapBenchMarkPut.put                            1048576         0.250    ss   10  2591.685 ±  286.809  us/op
+JavaHashMapBenchMarkPut.put                            1048576         0.375    ss   10  2689.951 ±  326.976  us/op
+JavaHashMapBenchMarkPut.put                            1048576           0.5    ss   10  2697.368 ±  433.494  us/op
+JavaHashMapBenchMarkPut.put                            1048576         0.625    ss   10  2720.060 ±  387.082  us/op
+JavaHashMapBenchMarkPut.put                            1048576          0.75    ss   10  2836.176 ±  503.496  us/op
+JavaHashMapBenchMarkPut.put                            1048576         0.875    ss   10  2755.796 ±  630.145  us/op
+JavaHashMapBenchMarkPut.put                            1048576             1    ss   10  2682.134 ±  449.527  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                     16         0.125    ss   10  1924.359 ± 1118.621  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                     16         0.250    ss   10  1320.095 ±  267.551  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                     16         0.375    ss   10  1490.823 ±  269.820  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                     16           0.5    ss   10  1503.975 ±  222.454  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                     16         0.625    ss   10  1342.393 ±  222.856  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                     16          0.75    ss   10  1377.946 ±  249.315  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                     16         0.875    ss   10  1396.760 ±  162.251  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                     16             1    ss   10  1485.398 ±  320.596  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                    100         0.125    ss   10  2179.344 ± 1112.358  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                    100         0.250    ss   10  1360.507 ±  417.673  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                    100         0.375    ss   10  1384.307 ±  185.616  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                    100           0.5    ss   10  1475.053 ±  225.240  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                    100         0.625    ss   10  1381.671 ±  269.301  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                    100          0.75    ss   10  1312.127 ±  289.599  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                    100         0.875    ss   10  1353.983 ±  162.286  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                    100             1    ss   10  1550.737 ±  405.375  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                   1024         0.125    ss   10  1923.805 ± 1222.767  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                   1024         0.250    ss   10  1327.166 ±  341.528  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                   1024         0.375    ss   10  1442.742 ±  302.731  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                   1024           0.5    ss   10  1562.159 ±  407.936  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                   1024         0.625    ss   10  1307.055 ±  247.093  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                   1024          0.75    ss   10  1390.461 ±  257.486  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                   1024         0.875    ss   10  1372.118 ±  239.718  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                   1024             1    ss   10  1522.450 ±  365.128  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  10000         0.125    ss   10  1458.460 ±  201.998  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  10000         0.250    ss   10  1370.282 ±  216.954  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  10000         0.375    ss   10  1151.576 ±  226.618  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  10000           0.5    ss   10  1225.181 ±  220.988  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  10000         0.625    ss   10   940.716 ±  240.896  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  10000          0.75    ss   10   931.232 ±  186.192  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  10000         0.875    ss   10   899.595 ±  126.326  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  10000             1    ss   10   971.137 ±  375.179  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  65536         0.125    ss   10  1397.503 ±  292.891  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  65536         0.250    ss   10   979.623 ±  166.526  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  65536         0.375    ss   10   962.800 ±  165.893  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  65536           0.5    ss   10  1003.143 ±  247.476  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  65536         0.625    ss   10   949.403 ±  171.189  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  65536          0.75    ss   10   983.203 ±  206.599  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  65536         0.875    ss   10   993.027 ±  205.334  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                  65536             1    ss   10   985.437 ±  298.497  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 100000         0.125    ss   10  1124.633 ±  152.292  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 100000         0.250    ss   10  1087.544 ±  292.764  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 100000         0.375    ss   10  1152.888 ±  372.940  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 100000           0.5    ss   10  1144.635 ±  263.083  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 100000         0.625    ss   10  1121.797 ±  265.143  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 100000          0.75    ss   10  1061.411 ±  184.370  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 100000         0.875    ss   10  1075.870 ±  187.419  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 100000             1    ss   10  1066.972 ±  129.006  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 524288         0.125    ss   10  1954.166 ±  518.918  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 524288         0.250    ss   10  1961.928 ±  462.758  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 524288         0.375    ss   10  1872.647 ±  244.794  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 524288           0.5    ss   10  1892.026 ±  444.910  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 524288         0.625    ss   10  1969.359 ±  353.656  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 524288          0.75    ss   10  1949.654 ±  468.202  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 524288         0.875    ss   10  1831.914 ±  341.304  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                 524288             1    ss   10  2005.673 ±  507.643  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1000000         0.125    ss   10  2599.189 ±  235.006  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1000000         0.250    ss   10  2844.515 ±  426.104  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1000000         0.375    ss   10  2754.140 ±  451.583  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1000000           0.5    ss   10  2643.935 ±  310.016  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1000000         0.625    ss   10  2627.806 ±  189.052  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1000000          0.75    ss   10  2743.504 ±  500.835  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1000000         0.875    ss   10  2919.769 ±  532.123  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1000000             1    ss   10  2749.096 ±  419.874  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1048576         0.125    ss   10  2604.706 ±  173.388  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1048576         0.250    ss   10  2738.323 ±  198.354  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1048576         0.375    ss   10  2797.540 ±  342.298  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1048576           0.5    ss   10  2972.998 ±  608.253  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1048576         0.625    ss   10  2836.231 ±  281.941  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1048576          0.75    ss   10  2666.995 ±  555.592  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1048576         0.875    ss   10  2719.605 ±  406.446  us/op
+JavaHashMapBenchMarkPut.putPoorHashCode                1048576             1    ss   10  3047.062 ±  917.228  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                 16         0.125    ss   10  1434.908 ±  277.229  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                 16         0.250    ss   10  1249.197 ±  280.373  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                 16         0.375    ss   10  1298.350 ±  206.853  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                 16           0.5    ss   10  1385.476 ±  263.531  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                 16         0.625    ss   10  1219.014 ±  285.440  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                 16          0.75    ss   10  1259.127 ±  192.477  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                 16         0.875    ss   10  1304.415 ±  236.994  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                 16             1    ss   10  1340.778 ±  190.749  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                100         0.125    ss   10  1713.054 ±  342.259  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                100         0.250    ss   10  1244.934 ±  279.451  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                100         0.375    ss   10  1285.201 ±  226.649  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                100           0.5    ss   10  1411.453 ±  207.351  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                100         0.625    ss   10  1267.502 ±  265.927  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                100          0.75    ss   10  1242.683 ±  326.662  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                100         0.875    ss   10  1270.463 ±  181.090  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode                100             1    ss   10  1381.175 ±  215.184  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode               1024         0.125    ss   10  1407.162 ±  200.675  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode               1024         0.250    ss   10  1215.065 ±  268.229  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode               1024         0.375    ss   10  1298.600 ±  236.068  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode               1024           0.5    ss   10  1343.076 ±  246.566  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode               1024         0.625    ss   10  1179.238 ±  111.291  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode               1024          0.75    ss   10  1286.357 ±  165.592  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode               1024         0.875    ss   10  1376.182 ±  344.592  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode               1024             1    ss   10  1355.907 ±  196.679  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              10000         0.125    ss   10  1547.895 ±  329.125  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              10000         0.250    ss   10  1310.190 ±  156.229  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              10000         0.375    ss   10  1098.056 ±  272.545  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              10000           0.5    ss   10  1126.675 ±  167.052  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              10000         0.625    ss   10   861.198 ±  242.344  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              10000          0.75    ss   10   888.645 ±  258.853  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              10000         0.875    ss   10   858.556 ±  166.280  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              10000             1    ss   10   898.081 ±  239.872  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              65536         0.125    ss   10  1322.312 ±  219.186  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              65536         0.250    ss   10   926.139 ±  189.556  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              65536         0.375    ss   10   976.060 ±  249.639  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              65536           0.5    ss   10   922.859 ±  121.523  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              65536         0.625    ss   10   931.457 ±  133.524  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              65536          0.75    ss   10   950.325 ±  153.176  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              65536         0.875    ss   10   923.118 ±  163.149  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode              65536             1    ss   10   960.697 ±  133.259  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             100000         0.125    ss   10  1049.203 ±  149.906  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             100000         0.250    ss   10  1072.942 ±  207.551  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             100000         0.375    ss   10  1058.728 ±  185.175  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             100000           0.5    ss   10  1026.843 ±  133.981  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             100000         0.625    ss   10  1081.064 ±  200.428  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             100000          0.75    ss   10  1029.943 ±  207.780  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             100000         0.875    ss   10  1017.147 ±  110.423  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             100000             1    ss   10  1038.067 ±  208.974  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             524288         0.125    ss   10  1857.720 ±  292.399  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             524288         0.250    ss   10  1861.770 ±  282.531  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             524288         0.375    ss   10  1790.140 ±  242.190  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             524288           0.5    ss   10  1842.256 ±  278.585  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             524288         0.625    ss   10  1802.436 ±  323.505  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             524288          0.75    ss   10  1773.694 ±  388.001  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             524288         0.875    ss   10  1773.655 ±  202.473  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode             524288             1    ss   10  1836.513 ±  364.622  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1000000         0.125    ss   10  2749.633 ±  347.420  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1000000         0.250    ss   10  2561.274 ±  352.323  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1000000         0.375    ss   10  2555.149 ±  257.129  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1000000           0.5    ss   10  2786.021 ±  467.580  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1000000         0.625    ss   10  2674.680 ±  379.729  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1000000          0.75    ss   10  2643.203 ±  487.165  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1000000         0.875    ss   10  2620.166 ±  230.881  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1000000             1    ss   10  2599.221 ±  215.612  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1048576         0.125    ss   10  2775.737 ±  450.552  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1048576         0.250    ss   10  2629.602 ±  313.587  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1048576         0.375    ss   10  2883.446 ±  426.064  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1048576           0.5    ss   10  2570.018 ±  275.835  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1048576         0.625    ss   10  2603.141 ±  283.043  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1048576          0.75    ss   10  2548.903 ±  247.821  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1048576         0.875    ss   10  2577.951 ±  236.430  us/op
+JavaHashMapBenchMarkPut.putTerribleHashCode            1048576             1    ss   10  2547.008 ±  155.809  us/op
+Alans-MacBook-Pro:benchmarking alanbyrne$
+

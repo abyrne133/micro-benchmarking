@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Thread)
 @BenchmarkMode(Mode.SingleShotTime)
 @Warmup(iterations = 5, batchSize = 10_000)
-@Measurement(iterations = 5, batchSize = 1_000)
+@Measurement(iterations = 5, batchSize = 10_000)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
 @Fork(2)
 public class JavaHashMapBenchMarkPut {
