@@ -2,69 +2,33 @@ package com.abyrne133.benchmarking;
 
 import org.openjdk.jmh.annotations.*;
 
-import java.util.AbstractMap;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 @State(Scope.Thread)
-@BenchmarkMode({Mode.AverageTime, Mode.SingleShotTime})
+@BenchmarkMode(Mode.SingleShotTime)
 @Warmup(iterations = 5, batchSize = 10_000)
-@Measurement(iterations = 10, batchSize = 10_000)
-@OutputTimeUnit(TimeUnit.MILLISECONDS)
+@Measurement(iterations = 5, batchSize = 1_000)
+@OutputTimeUnit(TimeUnit.MICROSECONDS)
 @Fork(2)
 public class JavaHashMapBenchMarkPut {
 
-    @Param({"default-constructor", "control", "capacity", "half-capacity", "capacity-no-load-factor", "custom-default", "custom-capacity", "custom-terrible-hash", "custom-bad-hash", "custom-basic-hash", "custom-hash-no-modulo"})
-    String hashMapType;
+    // power of 2 and power of 10 initial capacities.
+    @Param({"16", "100", "1024", "10000", "65536", "100000", "524288", "1000000", "1048576"})
+    Integer initialCapacity;
 
-    private static final int DEFAULT_CAPACITY = 16;
-    private static final float DEFAULT_LOAD_FACTOR = 0.75f;
+    // fractions of 8
+    @Param({"0.125", "0.250", "0.375", "0.5", "0.625", "0.75", "0.875", "1"})
+    Float loadFactor;
 
-    AbstractMap<Integer, Integer> hashMap;
-
+    HashMap<Integer, Object> hashMap;
     Random random = new Random(376832);
     int key;
 
     @Setup(Level.Iteration)
     public void initHashMap() {
-        switch (hashMapType) {
-            case "default-constructor":
-                hashMap = new java.util.HashMap<>();
-                break;
-            case "control":
-                hashMap = new java.util.HashMap<>(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR);
-                break;
-            case "capacity":
-                hashMap = new java.util.HashMap<>(10_001, DEFAULT_LOAD_FACTOR);
-                break;
-            case "half-capacity":
-                hashMap = new java.util.HashMap<>(500, DEFAULT_LOAD_FACTOR);
-                break;
-            case "capacity-no-load-factor":
-                hashMap = new java.util.HashMap<>(10_001, 1f);
-                break;
-            case "custom-default":
-                hashMap = new com.abyrne.HashMap<>(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR);
-                break;
-            case "custom-capacity":
-                hashMap = new com.abyrne.HashMap<>(10_001, DEFAULT_LOAD_FACTOR);
-                break;
-            case "custom-terrible-hash":
-                hashMap = new com.abyrne.HashMap<>(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, (k) -> 1);
-                break;
-            case "custom-bad-hash":
-                hashMap = new com.abyrne.HashMap<>(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, (k) -> k.hashCode() % 6);
-                break;
-            case "custom-basic-hash":
-                hashMap = new com.abyrne.HashMap<>(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, Object::hashCode);
-                break;
-            case "custom-hash-no-modulo":
-                hashMap = new com.abyrne.HashMap<>(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, (k) -> {
-                    int h;
-                    return (k == null) ? 0 : (h = k.hashCode()) ^ (h >>> 16);
-                });
-                break;
-        }
+        hashMap = new HashMap<>(initialCapacity, loadFactor);
     }
 
     @Setup(Level.Invocation)
@@ -73,7 +37,40 @@ public class JavaHashMapBenchMarkPut {
     }
 
     @Benchmark
-    public Integer put() {
-        return hashMap.put(key, key);
+    public Object put() {
+        return hashMap.put(key, new Object());
+    }
+
+    @Benchmark
+    public Object putTerribleHashCode() {
+        return hashMap.put(key, new TerribleHashCode());
+    }
+
+    @Benchmark
+    public Object putPoorHashCode() {
+        return hashMap.put(key, new PoorHashCode(key, initialCapacity));
+    }
+
+    private static class TerribleHashCode {
+        @Override
+        public int hashCode() {
+            return 1;
+        }
+    }
+
+    private static class PoorHashCode {
+
+        private final int key;
+        private final int tableSize;
+
+        private PoorHashCode(int key, int tableSize) {
+            this.key = key;
+            this.tableSize = tableSize;
+        }
+
+        @Override
+        public int hashCode() {
+            return key % (tableSize / 5); //only uses one fifth of the table buckets
+        }
     }
 }

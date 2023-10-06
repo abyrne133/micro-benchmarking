@@ -57,11 +57,6 @@ THE POSSIBILITY OF SUCH DAMAGE.
             <version>${jmh.version}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>com.abyrne</groupId>
-            <artifactId>study</artifactId>
-            <version>1</version>
-        </dependency>
     </dependencies>
 
     <properties>
@@ -108,10 +103,12 @@ THE POSSIBILITY OF SUCH DAMAGE.
                         <configuration>
                             <finalName>${uberjar.name}</finalName>
                             <transformers>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>org.openjdk.jmh.Main</mainClass>
                                 </transformer>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                             </transformers>
                             <filters>
                                 <filter>
